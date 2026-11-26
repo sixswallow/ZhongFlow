@@ -1,0 +1,283 @@
+<view class="page">
+  <view class="header">
+    <view class="header-bg"></view>
+    <view class="header-aurora"></view>
+    <view class="header-ring ring-a"></view>
+    <view class="status-bar" style="height: {{statusBarHeight}}px"></view>
+    <view class="header-content">
+      <picker class="location-row" mode="selector" range="{{townshipOptions}}" value="{{townshipIndex}}" bindchange="onTownshipChange">
+        <view class="location-picker">
+          <view class="location-icon ic ic-pin-w"></view>
+          <text class="location-text">{{location.city}}</text>
+          <text class="location-arrow">▼</text>
+        </view>
+      </picker>
+
+      <view class="current-weather" wx:if="{{weatherStatus === 'success'}}">
+        <view class="temp-block">
+          <text class="temperature num anim-pop">{{weather.current.temperature}}°</text>
+          <text class="weather-desc anim-fade d2">{{weather.current.weather}}</text>
+        </view>
+        <view class="extra-block anim-up d3">
+          <view class="extra-item">
+            <text class="extra-label">体感</text>
+            <text class="extra-value num">{{weather.current.feelsLike}}°</text>
+          </view>
+          <view class="extra-divider"></view>
+          <view class="extra-item">
+            <text class="extra-label">湿度</text>
+            <text class="extra-value num">{{weather.current.humidity}}%</text>
+          </view>
+          <view class="extra-divider"></view>
+          <view class="extra-item">
+            <text class="extra-label">{{weather.current.windDirection}}</text>
+            <text class="extra-value num">{{weather.current.windSpeed}}级</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="current-weather weather-placeholder" wx:elif="{{weatherStatus === 'loading'}}">
+        <view class="sk header-sk-temp"></view>
+        <view class="sk header-sk-desc"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="data-state-card anim-pop" wx:if="{{weatherStatus === 'error'}}">
+      <view class="data-state-mark ic ic-cloud-d"></view>
+      <view class="data-state-title">天气数据暂不可用</view>
+      <view class="data-state-desc">{{weatherErrorMessage}}</view>
+      <view class="data-state-retry" bindtap="onRefresh">重新获取</view>
+    </view>
+
+    <block wx:if="{{weatherStatus === 'loading'}}">
+      <view class="card anim-up">
+        <view class="sk sk-block title"></view>
+        <view class="sk sk-block chart"></view>
+        <view class="sk sk-block line"></view>
+      </view>
+      <view class="card anim-up d1">
+        <view class="sk sk-block title short"></view>
+        <view class="sk sk-block chart short"></view>
+      </view>
+    </block>
+
+    <block wx:if="{{weatherStatus === 'success'}}">
+    <view class="weather-layer card">
+      <view class="card-title">
+        气象图层
+        <text class="update-time num">{{layerTimeText}}</text>
+      </view>
+      <view class="layer-subtitle">{{layerSubtitle}}</view>
+
+      <view class="layer-switch">
+        <view class="layer-tab {{layerMode === 'radar' ? 'active' : ''}}" bindtap="onLayerMode" data-mode="radar">雷达回波</view>
+        <view class="layer-tab {{layerMode === 'wind' ? 'active' : ''}}" bindtap="onLayerMode" data-mode="wind">风向风速</view>
+      </view>
+
+      <view class="visual-canvas-shell">
+        <canvas type="2d" id="layerCanvas" class="layer-canvas" style="width: {{layerCanvasWidth}}px; height: {{layerCanvasHeight}}px;"
+          catchtouchstart="onLayerTouchStart" catchtouchmove="onLayerTouchMove" catchtouchend="onLayerTouchEnd"></canvas>
+      </view>
+
+      <view class="layer-zoom-bar">
+                <!-- 乡镇选择已与顶部实况合并：这里只显示当前取景范围（由顶部联动驱动） -->
+        <view class="layer-scope">{{layerScope}}</view>
+        <view class="layer-recenter" bindtap="onLayerRecenter">重定位</view>
+        <text class="layer-zoom-tip num">{{layerSpanText}}</text>
+      </view>
+
+      <view class="visual-controls" wx:if="{{layerMode === 'radar'}}">
+        <view class="visual-play {{isLayerPlaying ? 'playing' : ''}}" bindtap="toggleLayerPlay">{{isLayerPlaying ? '暂停' : '播放'}}</view>
+        <view class="timeline-progress" wx:if="{{radarFrames.length}}">
+          <slider class="timeline-slider" min="0" max="{{radarFrames.length - 1}}" step="1" value="{{radarFrameIndex}}" activeColor="#0e9bb8" backgroundColor="#d3e6f1" block-size="20" block-color="#0e4d64" bindchanging="onRadarSlideChanging" bindchange="onRadarSlideChange" />
+          <view class="timeline-times num">
+            <text>{{radarFrames[0].time}}</text>
+            <text class="timeline-now">{{layerTimeText}}</text>
+            <text>{{radarFrames[radarFrames.length - 1].time}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="layer-zoom-hint" wx:if="{{layerGridText}}">{{layerGridText}}</view>
+      <view class="layer-zoom-hint" wx:if="{{layerZoomHint}}">{{layerZoomHint}}</view>
+      <view class="layer-zoom-hint" wx:else>双指缩放 · 单指拖动平移</view>
+
+      <view class="layer-legend">
+        <block wx:if="{{layerMode === 'radar'}}">
+          <view class="layer-legend-item"><text class="legend-dot lv-1"></text>弱</view>
+          <view class="layer-legend-item"><text class="legend-dot lv-2"></text>中</view>
+          <view class="layer-legend-item"><text class="legend-dot lv-3"></text>强</view>
+          <view class="layer-legend-item"><text class="legend-dot lv-4"></text>特强</view>
+        </block>
+        <view class="layer-legend-item" wx:else>
+          <text class="legend-dot wind"></text>{{windSummary}}
+        </view>
+        <view class="layer-retry" wx:if="{{layerStatus === 'error'}}" bindtap="onLayerRetry">重试</view>
+      </view>
+
+      <view class="layer-source">数据来源：RainViewer · Open-Meteo</view>
+    </view>
+
+    <view class="minute-rain card anim-up d1">
+      <view class="card-title">
+        分钟级降水
+        <text class="update-time num">{{weather.current.updateTime}}</text>
+      </view>
+      <view class="rain-summary" wx:if="{{weather.minute.available}}">{{weather.minute.summary}}</view>
+      <view class="minute-empty" wx:else>
+        <view class="minute-empty-title">{{weather.minute.summary}}</view>
+        <view class="minute-empty-reason" wx:if="{{weather.minute.reason}}">原因：{{weather.minute.reason}}</view>
+        <view class="minute-empty-desc">未取到分钟级降水数据，无法判断未来 2 小时的降雨。</view>
+      </view>
+      <view class="visual-canvas-shell" wx:if="{{weather.minute.available}}">
+        <canvas type="2d" id="rainChart" class="rain-canvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"></canvas>
+      </view>
+      <view class="rain-legend" wx:if="{{weather.minute.available}}">
+        <view class="legend-item">
+          <view class="legend-line rain"></view>
+          <text class="legend-text">{{weather.minute.legendText}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 未来降雨影响：水利最需要的是「未来会下多少毫米」，而不是降雨概率 -->
+    <view class="rain-impact card anim-up d2" wx:if="{{rainImpact.ready}}">
+      <view class="card-title">未来降雨影响
+        <text class="impact-grade {{rainImpact.tone}}" wx:if="{{rainImpact.gradeText}}">{{rainImpact.gradeText}}</text>
+      </view>
+      <view class="impact-spans">
+        <block wx:for="{{rainImpact.spans}}" wx:key="want">
+          <view class="impact-divider" wx:if="{{index > 0}}"></view>
+          <view class="impact-span">
+            <view class="impact-mm num">{{item.mmText}}<text class="impact-unit">mm</text></view>
+            <view class="impact-label">未来{{item.label}}</view>
+          </view>
+        </block>
+      </view>
+      <view class="impact-meta" wx:if="{{rainImpact.metaText}}">{{rainImpact.metaText}}</view>
+      <view class="impact-tip">{{rainImpact.tip}}</view>
+    </view>
+
+    <view class="hourly-forecast card anim-up d2">
+      <view class="card-title">逐小时预报<text class="hour-legend">{{hourBarLegend}}</text></view>
+      <scroll-view class="hourly-scroll" scroll-x="{{true}}" enhanced="{{true}}" show-scrollbar="{{false}}">
+        <view class="hourly-list">
+          <view class="hourly-item" wx:for="{{weather.hourly}}" wx:key="time">
+            <view class="hour-time num">{{item.time}}</view>
+            <view class="hour-icon">{{item.weatherIcon}}</view>
+            <view class="hour-bar-track" style="{{item.rainQuiet ? 'background:transparent' : ''}}"><view class="hour-bar {{item.rainLevel}}" style="height: {{item.rainBar}}%"></view></view>
+            <view class="hour-rain num" wx:if="{{item.rain > 0}}">{{item.rain}}mm</view>
+            <view class="hour-rain num no-rain" wx:elif="{{item.rainKnown}}">--</view>
+            <view class="hour-rain num unknown-rain" wx:else>未知</view>
+            <view class="hour-temp num">{{item.temperature}}°</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <view class="daily-forecast card anim-up d3" wx:if="{{weather.daily.length > 0}}">
+      <view class="card-title">未来{{weather.daily.length}}天预报</view>
+      <view class="daily-list stagger">
+        <view class="daily-item" wx:for="{{weather.daily}}" wx:key="date">
+          <view class="daily-date num">{{item.date}}</view>
+          <view class="daily-weather">
+            <text class="daily-icon">{{item.dayWeatherIcon}}</text>
+            <text class="daily-desc">{{item.dayWeather}}</text>
+          </view>
+          <view class="daily-temp">
+            <text class="temp-high num">{{item.high}}°</text>
+            <text class="temp-divider">/</text>
+            <text class="temp-low num">{{item.low}}°</text>
+          </view>
+          <!-- 概率只有上游真的给了才显示：宁可显示「--」，也不拿降水量冒充概率 -->
+          <view class="daily-rain" wx:if="{{item.hasRainProb}}">
+            <view class="rain-bar-bg">
+              <view class="rain-bar" style="width: {{item.rainProb}}%"></view>
+            </view>
+            <text class="rain-prob num">{{item.rainProb}}%</text>
+          </view>
+          <view class="daily-rain" wx:else>
+            <text class="rain-prob-none">--</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="township-forecast card anim-up d4">
+      <view class="card-title nowcast-head" bindtap="onToggleNowcast">
+        乡镇短临预报
+        <text class="update-time num">{{nowcast.issueTimeText}}</text>
+        <view class="nowcast-toggle">{{nowcastExpanded ? '收起' : '展开'}}</view>
+      </view>
+
+      <!-- 未展开＝尚未取数。这里绝不能出现「无降雨」这类结论，也不能说成「数据缺失」 -->
+      <view class="nowcast-idle" wx:if="{{!nowcastExpanded}}">
+        <view class="nowcast-idle-top">
+          <view class="nowcast-idle-badge">尚未获取</view>
+          <view class="nowcast-idle-hint">点上方「展开」获取</view>
+        </view>
+        <view class="nowcast-idle-desc">展开后查看 12 个乡镇未来 2 小时的降雨趋势</view>
+      </view>
+
+      <block wx:if="{{nowcastExpanded}}">
+        <view class="nowcast-loading" wx:if="{{nowcastStatus === 'loading'}}">
+          <view class="sk nowcast-sk"></view>
+          <text class="nowcast-loading-text">正在获取 12 个乡镇的短临数据…</text>
+        </view>
+
+        <block wx:if="{{nowcast.townships && nowcast.townships.length > 0}}">
+          <view class="nowcast-integrity {{nowcast.degraded ? 'warn' : ''}}" wx:if="{{nowcast.integrityText}}">
+            <view class="integrity-dot"></view>
+            <text class="integrity-text">{{nowcast.integrityText}}</text>
+          </view>
+          <view class="nowcast-reason" wx:if="{{nowcast.degraded && nowcast.failedReasonText}}">{{nowcast.failedReasonText}}</view>
+          <view class="township-list stagger">
+            <view class="township-item" wx:for="{{nowcast.townships}}" wx:key="code">
+              <view class="township-info">
+                <view class="township-name">{{item.name}}</view>
+                <view class="township-status {{item.dataMissing ? 'missing' : (item.willRain ? 'rain' : 'norain')}}">
+                  <text wx:if="{{item.dataMissing}}">数据缺失</text>
+                  <text wx:else>{{item.startText}}</text>
+                </view>
+              </view>
+              <view class="township-data" wx:if="{{!item.dataMissing}}">
+                <view class="data-col">
+                  <view class="data-val num">{{item.totalRainText}}mm</view>
+                  <view class="data-label">累计降水</view>
+                </view>
+                <view class="data-col" wx:if="{{item.hasProb}}">
+                  <view class="data-val num">{{item.peakProbPercent}}%</view>
+                  <view class="data-label">降雨概率</view>
+                </view>
+                <view class="data-col">
+                  <view class="data-val num">{{item.peakMinuteText}}</view>
+                  <view class="data-label">最强降雨</view>
+                </view>
+              </view>
+              <view class="township-missing" wx:else>未取到该乡镇的短临数据</view>
+            </view>
+          </view>
+        </block>
+
+        <view class="nowcast-error" wx:if="{{nowcastStatus === 'error'}}">
+          <view class="nowcast-error-mark ic ic-cloud-d"></view>
+          <view class="nowcast-error-copy">
+            <view class="nowcast-error-title">乡镇短临预报暂不可用</view>
+            <view class="nowcast-error-desc" wx:if="{{nowcastErrorMessage}}">{{nowcastErrorMessage}}</view>
+            <view class="nowcast-error-desc" wx:elif="{{nowcast.townships && nowcast.townships.length > 0}}">当前展示的是上次获取的结果，可点击重试</view>
+            <view class="nowcast-error-desc" wx:else>短临预报未返回有效数据，可点击重试</view>
+          </view>
+          <view class="nowcast-error-retry" bindtap="onNowcastRefresh">重试</view>
+        </view>
+      </block>
+    </view>
+
+    <view class="provider-info anim-fade d5">
+      <text class="provider-text">数据来源：{{weatherProviderName}}{{nowcast.sourceLabel && nowcast.sourceLabel !== weatherProviderName ? '｜乡镇短临：' + nowcast.sourceLabel : ''}}</text>
+      <text class="refresh-btn" bindtap="onRefresh">刷新</text>
+    </view>
+    </block>
+  </view>
+</view>

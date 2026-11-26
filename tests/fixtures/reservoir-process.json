@@ -1,0 +1,3289 @@
+{
+ "capturedAt": "2026-09-26T04:56:30.464Z",
+ "source": "上游水库历史接口（捕获于 2026-09-26，地址见云函数代码）",
+ "stations": {
+  "613K0912": {
+   "name": "铜湾",
+   "rows": [
+    {
+     "date": "9/19",
+     "timestamp": 1789790400000,
+     "waterLevel": 151.48,
+     "volume": 108.13,
+     "inflow": 720,
+     "outflow": 720,
+     "value": 151.48
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789794000000,
+     "waterLevel": 151.4,
+     "volume": 107.2,
+     "inflow": 271.52,
+     "outflow": 724.3,
+     "value": 151.4
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789797600000,
+     "waterLevel": 151.3,
+     "volume": 106.03,
+     "inflow": 268.51,
+     "outflow": 754.62,
+     "value": 151.3
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789801200000,
+     "waterLevel": 151.18,
+     "volume": 104.64,
+     "inflow": 387.91,
+     "outflow": 774.02,
+     "value": 151.18
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789804800000,
+     "waterLevel": 151.07,
+     "volume": 103.35,
+     "inflow": 424.51,
+     "outflow": 780.07,
+     "value": 151.07
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789808400000,
+     "waterLevel": 150.97,
+     "volume": 102.19,
+     "inflow": 629.94,
+     "outflow": 793.83,
+     "value": 150.97
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789812000000,
+     "waterLevel": 150.95,
+     "volume": 101.96,
+     "inflow": 624.59,
+     "outflow": 785.7,
+     "value": 150.95
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789815600000,
+     "waterLevel": 150.85,
+     "volume": 100.79,
+     "inflow": 416.52,
+     "outflow": 802.63,
+     "value": 150.85
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789819200000,
+     "waterLevel": 150.72,
+     "volume": 99.28,
+     "inflow": 320.9,
+     "outflow": 807.01,
+     "value": 150.72
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789822800000,
+     "waterLevel": 150.59,
+     "volume": 97.77,
+     "inflow": 534.09,
+     "outflow": 825.76,
+     "value": 150.59
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789826400000,
+     "waterLevel": 150.54,
+     "volume": 97.19,
+     "inflow": 723.2,
+     "outflow": 820.42,
+     "value": 150.54
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789830000000,
+     "waterLevel": 150.5,
+     "volume": 96.72,
+     "inflow": 707.06,
+     "outflow": 834.84,
+     "value": 150.5
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789833600000,
+     "waterLevel": 150.46,
+     "volume": 96.25,
+     "inflow": 718.33,
+     "outflow": 848.89,
+     "value": 150.46
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789837200000,
+     "waterLevel": 150.41,
+     "volume": 95.67,
+     "inflow": 686.44,
+     "outflow": 847.55,
+     "value": 150.41
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789840800000,
+     "waterLevel": 150.36,
+     "volume": 95.09,
+     "inflow": 659.21,
+     "outflow": 853.65,
+     "value": 150.36
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789844400000,
+     "waterLevel": 150.32,
+     "volume": 94.62,
+     "inflow": 885.02,
+     "outflow": 851.69,
+     "value": 150.32
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789848000000,
+     "waterLevel": 150.36,
+     "volume": 95.09,
+     "inflow": 993.25,
+     "outflow": 832.14,
+     "value": 150.36
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789851600000,
+     "waterLevel": 150.43,
+     "volume": 95.91,
+     "inflow": 1094.17,
+     "outflow": 835.84,
+     "value": 150.43
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789855200000,
+     "waterLevel": 150.74,
+     "volume": 99.51,
+     "inflow": 1194.92,
+     "outflow": 94.92,
+     "value": 150.74
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789858800000,
+     "waterLevel": 150.97,
+     "volume": 102.19,
+     "inflow": 1100,
+     "outflow": 0,
+     "value": 150.97
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789862400000,
+     "waterLevel": 151.31,
+     "volume": 106.15,
+     "inflow": 905.56,
+     "outflow": 0,
+     "value": 151.31
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789866000000,
+     "waterLevel": 151.58,
+     "volume": 109.29,
+     "inflow": 936.11,
+     "outflow": 0,
+     "value": 151.58
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789869600000,
+     "waterLevel": 151.68,
+     "volume": 110.46,
+     "inflow": 670.86,
+     "outflow": 637.53,
+     "value": 151.68
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789873200000,
+     "waterLevel": 151.73,
+     "volume": 111.04,
+     "inflow": 636.97,
+     "outflow": 798.08,
+     "value": 151.73
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789876800000,
+     "waterLevel": 151.6,
+     "volume": 109.52,
+     "inflow": 418.53,
+     "outflow": 776.86,
+     "value": 151.6
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789880400000,
+     "waterLevel": 151.57,
+     "volume": 109.17,
+     "inflow": 480.21,
+     "outflow": 446.88,
+     "value": 151.57
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789884000000,
+     "waterLevel": 151.54,
+     "volume": 108.83,
+     "inflow": 87.87,
+     "outflow": 346.2,
+     "value": 151.54
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789887600000,
+     "waterLevel": 151.52,
+     "volume": 108.59,
+     "inflow": 408.27,
+     "outflow": 344.38,
+     "value": 151.52
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789891200000,
+     "waterLevel": 151.56,
+     "volume": 109.06,
+     "inflow": 550.25,
+     "outflow": 258.58,
+     "value": 151.56
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789894800000,
+     "waterLevel": 151.62,
+     "volume": 109.76,
+     "inflow": 130.56,
+     "outflow": 0,
+     "value": 151.62
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789898400000,
+     "waterLevel": 151.54,
+     "volume": 108.83,
+     "inflow": 23.66,
+     "outflow": 412.55,
+     "value": 151.54
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789902000000,
+     "waterLevel": 151.6,
+     "volume": 109.52,
+     "inflow": 701.92,
+     "outflow": 346.36,
+     "value": 151.6
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789905600000,
+     "waterLevel": 151.6,
+     "volume": 109.52,
+     "inflow": 3.17,
+     "outflow": 261.5,
+     "value": 151.6
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789909200000,
+     "waterLevel": 151.58,
+     "volume": 109.29,
+     "inflow": 418.48,
+     "outflow": 257.37,
+     "value": 151.58
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789912800000,
+     "waterLevel": 151.6,
+     "volume": 109.52,
+     "inflow": 143.43,
+     "outflow": 368.43,
+     "value": 151.6
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789916400000,
+     "waterLevel": 151.56,
+     "volume": 109.06,
+     "inflow": 770.07,
+     "outflow": 545.07,
+     "value": 151.56
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789920000000,
+     "waterLevel": 151.54,
+     "volume": 108.83,
+     "inflow": 557.71,
+     "outflow": 879.93,
+     "value": 151.54
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789923600000,
+     "waterLevel": 151.47,
+     "volume": 108.01,
+     "inflow": 650.37,
+     "outflow": 908.7,
+     "value": 151.47
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789927200000,
+     "waterLevel": 151.41,
+     "volume": 107.31,
+     "inflow": 668.67,
+     "outflow": 863.11,
+     "value": 151.41
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789930800000,
+     "waterLevel": 151.35,
+     "volume": 106.61,
+     "inflow": 670.2,
+     "outflow": 834.09,
+     "value": 151.35
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789934400000,
+     "waterLevel": 151.34,
+     "volume": 106.5,
+     "inflow": 925.22,
+     "outflow": 828,
+     "value": 151.34
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789938000000,
+     "waterLevel": 151.37,
+     "volume": 106.85,
+     "inflow": 927.96,
+     "outflow": 830.74,
+     "value": 151.37
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789941600000,
+     "waterLevel": 151.36,
+     "volume": 106.73,
+     "inflow": 852.26,
+     "outflow": 949.48,
+     "value": 151.36
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789945200000,
+     "waterLevel": 151.36,
+     "volume": 106.73,
+     "inflow": 992.97,
+     "outflow": 992.97,
+     "value": 151.36
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789948800000,
+     "waterLevel": 151.34,
+     "volume": 106.5,
+     "inflow": 928.54,
+     "outflow": 992.43,
+     "value": 151.34
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789952400000,
+     "waterLevel": 151.33,
+     "volume": 106.38,
+     "inflow": 843.52,
+     "outflow": 1004.63,
+     "value": 151.33
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789956000000,
+     "waterLevel": 151.27,
+     "volume": 105.68,
+     "inflow": 1061.91,
+     "outflow": 1159.13,
+     "value": 151.27
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789959600000,
+     "waterLevel": 151.18,
+     "volume": 104.64,
+     "inflow": 961.47,
+     "outflow": 1122.58,
+     "value": 151.18
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789963200000,
+     "waterLevel": 151.19,
+     "volume": 104.75,
+     "inflow": 894.3,
+     "outflow": 669.3,
+     "value": 151.19
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789966800000,
+     "waterLevel": 151.27,
+     "volume": 105.68,
+     "inflow": 424.13,
+     "outflow": 263.02,
+     "value": 151.27
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789970400000,
+     "waterLevel": 151.35,
+     "volume": 106.61,
+     "inflow": 621.99,
+     "outflow": 263.66,
+     "value": 151.35
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789974000000,
+     "waterLevel": 151.43,
+     "volume": 107.55,
+     "inflow": 199.33,
+     "outflow": 266,
+     "value": 151.43
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789977600000,
+     "waterLevel": 151.42,
+     "volume": 107.43,
+     "inflow": 332.14,
+     "outflow": 265.47,
+     "value": 151.42
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789981200000,
+     "waterLevel": 151.45,
+     "volume": 107.78,
+     "inflow": 330.19,
+     "outflow": 266.3,
+     "value": 151.45
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789984800000,
+     "waterLevel": 151.45,
+     "volume": 107.78,
+     "inflow": 297.46,
+     "outflow": 266.9,
+     "value": 151.45
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789988400000,
+     "waterLevel": 151.47,
+     "volume": 108.01,
+     "inflow": 430.94,
+     "outflow": 267.05,
+     "value": 151.47
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789992000000,
+     "waterLevel": 151.58,
+     "volume": 109.29,
+     "inflow": 722.86,
+     "outflow": 270.08,
+     "value": 151.58
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789995600000,
+     "waterLevel": 151.64,
+     "volume": 109.99,
+     "inflow": 458.59,
+     "outflow": 458.59,
+     "value": 151.64
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789999200000,
+     "waterLevel": 151.68,
+     "volume": 110.46,
+     "inflow": 864.25,
+     "outflow": 605.92,
+     "value": 151.68
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1790002800000,
+     "waterLevel": 151.7,
+     "volume": 110.69,
+     "inflow": 754.63,
+     "outflow": 690.74,
+     "value": 151.7
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790006400000,
+     "waterLevel": 151.72,
+     "volume": 110.92,
+     "inflow": 859.65,
+     "outflow": 892.98,
+     "value": 151.72
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790010000000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 982.87,
+     "outflow": 949.54,
+     "value": 151.75
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790013600000,
+     "waterLevel": 151.76,
+     "volume": 111.39,
+     "inflow": 952.02,
+     "outflow": 952.02,
+     "value": 151.76
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790017200000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 952.02,
+     "outflow": 952.02,
+     "value": 151.75
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790020800000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 952.02,
+     "outflow": 952.02,
+     "value": 151.75
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790024400000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 985.35,
+     "outflow": 952.02,
+     "value": 151.75
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790028000000,
+     "waterLevel": 151.76,
+     "volume": 111.39,
+     "inflow": 952.02,
+     "outflow": 952.02,
+     "value": 151.76
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790031600000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 918.69,
+     "outflow": 952.02,
+     "value": 151.75
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790035200000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 984.13,
+     "outflow": 950.8,
+     "value": 151.75
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790038800000,
+     "waterLevel": 151.71,
+     "volume": 110.8,
+     "inflow": 459.35,
+     "outflow": 814.91,
+     "value": 151.71
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790042400000,
+     "waterLevel": 151.57,
+     "volume": 109.17,
+     "inflow": 153.39,
+     "outflow": 672.83,
+     "value": 151.57
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790046000000,
+     "waterLevel": 151.52,
+     "volume": 108.59,
+     "inflow": 501.16,
+     "outflow": 403.94,
+     "value": 151.52
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790049600000,
+     "waterLevel": 151.49,
+     "volume": 108.24,
+     "inflow": 105.66,
+     "outflow": 330.66,
+     "value": 151.49
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790053200000,
+     "waterLevel": 151.47,
+     "volume": 108.01,
+     "inflow": 350.92,
+     "outflow": 253.7,
+     "value": 151.47
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790056800000,
+     "waterLevel": 151.5,
+     "volume": 108.36,
+     "inflow": 265.44,
+     "outflow": 234.88,
+     "value": 151.5
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790060400000,
+     "waterLevel": 151.5,
+     "volume": 108.36,
+     "inflow": 331.17,
+     "outflow": 233.95,
+     "value": 151.5
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790064000000,
+     "waterLevel": 151.53,
+     "volume": 108.71,
+     "inflow": 301.37,
+     "outflow": 234.7,
+     "value": 151.53
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790067600000,
+     "waterLevel": 151.55,
+     "volume": 108.94,
+     "inflow": 299.11,
+     "outflow": 235.22,
+     "value": 151.55
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790071200000,
+     "waterLevel": 151.57,
+     "volume": 109.17,
+     "inflow": 299.87,
+     "outflow": 235.98,
+     "value": 151.57
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790074800000,
+     "waterLevel": 151.59,
+     "volume": 109.41,
+     "inflow": 300.49,
+     "outflow": 236.6,
+     "value": 151.59
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790078400000,
+     "waterLevel": 151.61,
+     "volume": 109.64,
+     "inflow": 303.77,
+     "outflow": 237.1,
+     "value": 151.61
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790082000000,
+     "waterLevel": 151.63,
+     "volume": 109.87,
+     "inflow": 301.39,
+     "outflow": 237.5,
+     "value": 151.63
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790085600000,
+     "waterLevel": 151.65,
+     "volume": 110.11,
+     "inflow": 301.84,
+     "outflow": 237.95,
+     "value": 151.65
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790089200000,
+     "waterLevel": 151.67,
+     "volume": 110.34,
+     "inflow": 271.63,
+     "outflow": 238.3,
+     "value": 151.67
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790092800000,
+     "waterLevel": 151.7,
+     "volume": 110.69,
+     "inflow": 497.22,
+     "outflow": 238.89,
+     "value": 151.7
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790096400000,
+     "waterLevel": 151.77,
+     "volume": 111.5,
+     "inflow": 505.5,
+     "outflow": 441.61,
+     "value": 151.77
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790100000000,
+     "waterLevel": 151.77,
+     "volume": 111.5,
+     "inflow": 831.18,
+     "outflow": 733.96,
+     "value": 151.77
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790103600000,
+     "waterLevel": 151.79,
+     "volume": 111.74,
+     "inflow": 672.92,
+     "outflow": 736.81,
+     "value": 151.79
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790107200000,
+     "waterLevel": 151.77,
+     "volume": 111.5,
+     "inflow": 700.43,
+     "outflow": 733.76,
+     "value": 151.77
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790110800000,
+     "waterLevel": 151.76,
+     "volume": 111.39,
+     "inflow": 702.3,
+     "outflow": 732.86,
+     "value": 151.76
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790114400000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 698.2,
+     "outflow": 731.53,
+     "value": 151.75
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790118000000,
+     "waterLevel": 151.74,
+     "volume": 111.15,
+     "inflow": 521,
+     "outflow": 554.33,
+     "value": 151.74
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790121600000,
+     "waterLevel": 151.71,
+     "volume": 110.8,
+     "inflow": 133.8,
+     "outflow": 358.8,
+     "value": 151.71
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790125200000,
+     "waterLevel": 151.68,
+     "volume": 110.46,
+     "inflow": 385.38,
+     "outflow": 352.05,
+     "value": 151.68
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790128800000,
+     "waterLevel": 151.69,
+     "volume": 110.57,
+     "inflow": 351.06,
+     "outflow": 351.06,
+     "value": 151.69
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790132400000,
+     "waterLevel": 151.69,
+     "volume": 110.57,
+     "inflow": 371.13,
+     "outflow": 307.24,
+     "value": 151.69
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790136000000,
+     "waterLevel": 151.71,
+     "volume": 110.8,
+     "inflow": 328.23,
+     "outflow": 264.34,
+     "value": 151.71
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790139600000,
+     "waterLevel": 151.72,
+     "volume": 110.92,
+     "inflow": 297.83,
+     "outflow": 264.5,
+     "value": 151.72
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790143200000,
+     "waterLevel": 151.74,
+     "volume": 111.15,
+     "inflow": 362.1,
+     "outflow": 264.88,
+     "value": 151.74
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790146800000,
+     "waterLevel": 151.76,
+     "volume": 111.39,
+     "inflow": 295.72,
+     "outflow": 265.16,
+     "value": 151.76
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790150400000,
+     "waterLevel": 151.78,
+     "volume": 111.62,
+     "inflow": 332.43,
+     "outflow": 265.76,
+     "value": 151.78
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790154000000,
+     "waterLevel": 151.79,
+     "volume": 111.74,
+     "inflow": 296.86,
+     "outflow": 266.3,
+     "value": 151.79
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790157600000,
+     "waterLevel": 151.81,
+     "volume": 111.97,
+     "inflow": 363.94,
+     "outflow": 266.72,
+     "value": 151.81
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790161200000,
+     "waterLevel": 151.83,
+     "volume": 112.2,
+     "inflow": 458.09,
+     "outflow": 296.98,
+     "value": 151.83
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790164800000,
+     "waterLevel": 151.87,
+     "volume": 112.67,
+     "inflow": 526.34,
+     "outflow": 590.23,
+     "value": 151.87
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790168400000,
+     "waterLevel": 151.87,
+     "volume": 112.67,
+     "inflow": 858.5,
+     "outflow": 727.94,
+     "value": 151.87
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790172000000,
+     "waterLevel": 151.88,
+     "volume": 112.78,
+     "inflow": 664.71,
+     "outflow": 731.38,
+     "value": 151.88
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790175600000,
+     "waterLevel": 151.84,
+     "volume": 112.32,
+     "inflow": 668.27,
+     "outflow": 796.05,
+     "value": 151.84
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790179200000,
+     "waterLevel": 151.85,
+     "volume": 112.43,
+     "inflow": 764.25,
+     "outflow": 700.36,
+     "value": 151.85
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790182800000,
+     "waterLevel": 151.86,
+     "volume": 112.55,
+     "inflow": 671.45,
+     "outflow": 735.34,
+     "value": 151.86
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790186400000,
+     "waterLevel": 151.88,
+     "volume": 112.78,
+     "inflow": 1139.9,
+     "outflow": 945.46,
+     "value": 151.88
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790190000000,
+     "waterLevel": 151.91,
+     "volume": 113.13,
+     "inflow": 921.05,
+     "outflow": 954.38,
+     "value": 151.91
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790193600000,
+     "waterLevel": 151.91,
+     "volume": 113.13,
+     "inflow": 1017.59,
+     "outflow": 953.7,
+     "value": 151.91
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790197200000,
+     "waterLevel": 151.91,
+     "volume": 113.13,
+     "inflow": 987.03,
+     "outflow": 953.7,
+     "value": 151.91
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790200800000,
+     "waterLevel": 151.92,
+     "volume": 113.25,
+     "inflow": 955.5,
+     "outflow": 955.5,
+     "value": 151.92
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790204400000,
+     "waterLevel": 151.83,
+     "volume": 112.2,
+     "inflow": 422.17,
+     "outflow": 908.28,
+     "value": 151.83
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790208000000,
+     "waterLevel": 151.71,
+     "volume": 110.8,
+     "inflow": 439.72,
+     "outflow": 698.05,
+     "value": 151.71
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790211600000,
+     "waterLevel": 151.69,
+     "volume": 110.57,
+     "inflow": 415.25,
+     "outflow": 381.92,
+     "value": 151.69
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790215200000,
+     "waterLevel": 151.66,
+     "volume": 110.22,
+     "inflow": 109.74,
+     "outflow": 270.85,
+     "value": 151.66
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790218800000,
+     "waterLevel": 151.67,
+     "volume": 110.34,
+     "inflow": 368.13,
+     "outflow": 270.91,
+     "value": 151.67
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790222400000,
+     "waterLevel": 151.7,
+     "volume": 110.69,
+     "inflow": 336.2,
+     "outflow": 272.31,
+     "value": 151.7
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790226000000,
+     "waterLevel": 151.71,
+     "volume": 110.8,
+     "inflow": 337.11,
+     "outflow": 273.22,
+     "value": 151.71
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790229600000,
+     "waterLevel": 151.73,
+     "volume": 111.04,
+     "inflow": 336.07,
+     "outflow": 272.18,
+     "value": 151.73
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790233200000,
+     "waterLevel": 151.74,
+     "volume": 111.15,
+     "inflow": 272.5,
+     "outflow": 272.5,
+     "value": 151.74
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790236800000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 306.09,
+     "outflow": 272.76,
+     "value": 151.75
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790240400000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 306.61,
+     "outflow": 273.28,
+     "value": 151.75
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790244000000,
+     "waterLevel": 151.77,
+     "volume": 111.5,
+     "inflow": 303.84,
+     "outflow": 273.28,
+     "value": 151.77
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790247600000,
+     "waterLevel": 151.78,
+     "volume": 111.62,
+     "inflow": 468.62,
+     "outflow": 274.18,
+     "value": 151.78
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790251200000,
+     "waterLevel": 151.83,
+     "volume": 112.2,
+     "inflow": 582.2,
+     "outflow": 518.31,
+     "value": 151.83
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790254800000,
+     "waterLevel": 151.88,
+     "volume": 112.78,
+     "inflow": 817.61,
+     "outflow": 623.17,
+     "value": 151.88
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790258400000,
+     "waterLevel": 151.9,
+     "volume": 113.02,
+     "inflow": 660.58,
+     "outflow": 627.25,
+     "value": 151.9
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790262000000,
+     "waterLevel": 151.92,
+     "volume": 113.25,
+     "inflow": 659.75,
+     "outflow": 626.42,
+     "value": 151.92
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790265600000,
+     "waterLevel": 151.93,
+     "volume": 113.37,
+     "inflow": 691.33,
+     "outflow": 627.44,
+     "value": 151.93
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790269200000,
+     "waterLevel": 151.94,
+     "volume": 113.48,
+     "inflow": 593.32,
+     "outflow": 690.54,
+     "value": 151.94
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790272800000,
+     "waterLevel": 151.88,
+     "volume": 112.78,
+     "inflow": 584.98,
+     "outflow": 876.65,
+     "value": 151.88
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790276400000,
+     "waterLevel": 151.79,
+     "volume": 111.74,
+     "inflow": 831.93,
+     "outflow": 1026.37,
+     "value": 151.79
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790280000000,
+     "waterLevel": 151.77,
+     "volume": 111.5,
+     "inflow": 963.37,
+     "outflow": 1027.26,
+     "value": 151.77
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790283600000,
+     "waterLevel": 151.83,
+     "volume": 112.2,
+     "inflow": 1298.72,
+     "outflow": 748.72,
+     "value": 151.83
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790287200000,
+     "waterLevel": 151.85,
+     "volume": 112.43,
+     "inflow": 0,
+     "outflow": 281.25,
+     "value": 151.85
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790290800000,
+     "waterLevel": 151.75,
+     "volume": 111.27,
+     "inflow": 276.49,
+     "outflow": 276.49,
+     "value": 151.75
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790294400000,
+     "waterLevel": 151.81,
+     "volume": 111.97,
+     "inflow": 408.98,
+     "outflow": 278.42,
+     "value": 151.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790298000000,
+     "waterLevel": 151.79,
+     "volume": 111.74,
+     "inflow": 148.66,
+     "outflow": 279.22,
+     "value": 151.79
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790301600000,
+     "waterLevel": 151.78,
+     "volume": 111.62,
+     "inflow": 345.68,
+     "outflow": 279.01,
+     "value": 151.78
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790305200000,
+     "waterLevel": 151.8,
+     "volume": 111.85,
+     "inflow": 309.76,
+     "outflow": 279.2,
+     "value": 151.8
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790308800000,
+     "waterLevel": 151.8,
+     "volume": 111.85,
+     "inflow": 279.2,
+     "outflow": 279.2,
+     "value": 151.8
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790312400000,
+     "waterLevel": 151.8,
+     "volume": 111.85,
+     "inflow": 279.2,
+     "outflow": 279.2,
+     "value": 151.8
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790316000000,
+     "waterLevel": 151.8,
+     "volume": 111.85,
+     "inflow": 312.53,
+     "outflow": 279.2,
+     "value": 151.8
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790319600000,
+     "waterLevel": 151.81,
+     "volume": 111.97,
+     "inflow": 343.09,
+     "outflow": 279.2,
+     "value": 151.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790323200000,
+     "waterLevel": 151.82,
+     "volume": 112.08,
+     "inflow": 280.1,
+     "outflow": 280.1,
+     "value": 151.82
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790326800000,
+     "waterLevel": 151.83,
+     "volume": 112.2,
+     "inflow": 280.1,
+     "outflow": 280.1,
+     "value": 151.83
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790330400000,
+     "waterLevel": 151.83,
+     "volume": 112.2,
+     "inflow": 313.43,
+     "outflow": 280.1,
+     "value": 151.83
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790334000000,
+     "waterLevel": 151.84,
+     "volume": 112.32,
+     "inflow": 280.47,
+     "outflow": 280.47,
+     "value": 151.84
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790337600000,
+     "waterLevel": 151.84,
+     "volume": 112.32,
+     "inflow": 281,
+     "outflow": 281,
+     "value": 151.84
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790341200000,
+     "waterLevel": 151.84,
+     "volume": 112.32,
+     "inflow": 311.56,
+     "outflow": 281,
+     "value": 151.84
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790344800000,
+     "waterLevel": 151.85,
+     "volume": 112.43,
+     "inflow": 314.33,
+     "outflow": 281,
+     "value": 151.85
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790348400000,
+     "waterLevel": 151.93,
+     "volume": 113.37,
+     "inflow": 702.31,
+     "outflow": 282.87,
+     "value": 151.93
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790352000000,
+     "waterLevel": 151.96,
+     "volume": 113.71,
+     "inflow": 589.74,
+     "outflow": 620.3,
+     "value": 151.96
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790355600000,
+     "waterLevel": 151.97,
+     "volume": 113.83,
+     "inflow": 639.69,
+     "outflow": 706.36,
+     "value": 151.97
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790359200000,
+     "waterLevel": 151.97,
+     "volume": 113.83,
+     "inflow": 698.24,
+     "outflow": 728.8,
+     "value": 151.97
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790362800000,
+     "waterLevel": 151.95,
+     "volume": 113.6,
+     "inflow": 695.77,
+     "outflow": 729.1,
+     "value": 151.95
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790366400000,
+     "waterLevel": 151.94,
+     "volume": 113.48,
+     "inflow": 698.02,
+     "outflow": 728.58,
+     "value": 151.94
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790370000000,
+     "waterLevel": 151.92,
+     "volume": 113.25,
+     "inflow": 693.67,
+     "outflow": 727,
+     "value": 151.92
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790373600000,
+     "waterLevel": 151.91,
+     "volume": 113.13,
+     "inflow": 693.67,
+     "outflow": 727,
+     "value": 151.91
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790377200000,
+     "waterLevel": 151.88,
+     "volume": 112.78,
+     "inflow": 389.08,
+     "outflow": 550.19,
+     "value": 151.88
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790380800000,
+     "waterLevel": 151.85,
+     "volume": 112.43,
+     "inflow": 187.64,
+     "outflow": 318.2,
+     "value": 151.85
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790384400000,
+     "waterLevel": 151.83,
+     "volume": 112.2,
+     "inflow": 304,
+     "outflow": 270.67,
+     "value": 151.83
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790388000000,
+     "waterLevel": 151.85,
+     "volume": 112.43,
+     "inflow": 366.02,
+     "outflow": 268.8,
+     "value": 151.85
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790391600000,
+     "waterLevel": 151.85,
+     "volume": 112.43,
+     "inflow": 268.95,
+     "outflow": 268.95,
+     "value": 151.85
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790395200000,
+     "waterLevel": 151.86,
+     "volume": 112.55,
+     "inflow": 302.43,
+     "outflow": 269.1,
+     "value": 151.86
+    }
+   ]
+  },
+  "613K0920": {
+   "name": "三角滩",
+   "rows": [
+    {
+     "date": "9/20",
+     "timestamp": 1789862400000,
+     "waterLevel": 212,
+     "volume": 21.88,
+     "inflow": 60,
+     "outflow": 50,
+     "value": 212
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789948800000,
+     "waterLevel": 212.1,
+     "volume": 21.88,
+     "inflow": 70,
+     "outflow": 60,
+     "value": 212.1
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790035200000,
+     "waterLevel": 212.25,
+     "volume": 23.13,
+     "inflow": 70,
+     "outflow": 60,
+     "value": 212.25
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790121600000,
+     "waterLevel": 212.1,
+     "volume": 22.38,
+     "inflow": 50,
+     "outflow": 60,
+     "value": 212.1
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790139600000,
+     "waterLevel": 212.1,
+     "volume": 22.38,
+     "inflow": 60,
+     "outflow": 70,
+     "value": 212.1
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790164800000,
+     "waterLevel": 212.08,
+     "volume": 22.28,
+     "inflow": 50,
+     "outflow": 60,
+     "value": 212.08
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790208000000,
+     "waterLevel": 212.25,
+     "volume": 23.13,
+     "inflow": 70,
+     "outflow": 60,
+     "value": 212.25
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790294400000,
+     "waterLevel": 212.25,
+     "volume": 23.13,
+     "inflow": 20,
+     "outflow": 35,
+     "value": 212.25
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790380800000,
+     "waterLevel": 212.39,
+     "volume": 23.83,
+     "inflow": 120,
+     "outflow": 70,
+     "value": 212.39
+    }
+   ]
+  },
+  "613K0907": {
+   "name": "五龙溪",
+   "rows": [
+    {
+     "date": "9/20",
+     "timestamp": 1789862400000,
+     "waterLevel": 267.65,
+     "volume": 5.56,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 267.65
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789869600000,
+     "waterLevel": 267.65,
+     "volume": 5.56,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 267.65
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789948800000,
+     "waterLevel": 267.5,
+     "volume": 5.5,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 267.5
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790035200000,
+     "waterLevel": 267.35,
+     "volume": 5.44,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 267.35
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790121600000,
+     "waterLevel": 267.25,
+     "volume": 5.4,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 267.25
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790208000000,
+     "waterLevel": 267.1,
+     "volume": 5.34,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 267.1
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790294400000,
+     "waterLevel": 266.9,
+     "volume": 5.26,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 266.9
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790380800000,
+     "waterLevel": 266.75,
+     "volume": 5.2,
+     "inflow": 0.341,
+     "outflow": 0.92,
+     "value": 266.75
+    }
+   ]
+  },
+  "613K0919": {
+   "name": "柏坡洞",
+   "rows": [
+    {
+     "date": "9/19",
+     "timestamp": 1789790400000,
+     "waterLevel": 257.92,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.92
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789794000000,
+     "waterLevel": 257.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.9
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789797600000,
+     "waterLevel": 257.89,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.89
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789801200000,
+     "waterLevel": 257.89,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.89
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789804800000,
+     "waterLevel": 257.88,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.88
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789808400000,
+     "waterLevel": 255,
+     "volume": 0.63,
+     "inflow": 2.4,
+     "outflow": 2.6,
+     "value": 255
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789812000000,
+     "waterLevel": 257.87,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.87
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789815600000,
+     "waterLevel": 257.86,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.86
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789819200000,
+     "waterLevel": 257.85,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.85
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789822800000,
+     "waterLevel": 257.83,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.83
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789826400000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/19",
+     "timestamp": 1789830000000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789833600000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789837200000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789840800000,
+     "waterLevel": 257.81,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.81
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789844400000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789848000000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789851600000,
+     "waterLevel": 257.76,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.76
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789855200000,
+     "waterLevel": 257.76,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.76
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789858800000,
+     "waterLevel": 257.75,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.75
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789862400000,
+     "waterLevel": 255,
+     "volume": 0.63,
+     "inflow": 2.4,
+     "outflow": 2.8,
+     "value": 255
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789866000000,
+     "waterLevel": 257.73,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.73
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789869600000,
+     "waterLevel": 257.72,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.72
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789873200000,
+     "waterLevel": 257.71,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.71
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789876800000,
+     "waterLevel": 257.67,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.67
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789880400000,
+     "waterLevel": 257.68,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.68
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789884000000,
+     "waterLevel": 257.69,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.69
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789887600000,
+     "waterLevel": 257.65,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.65
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789891200000,
+     "waterLevel": 257.66,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.66
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789894800000,
+     "waterLevel": 257.63,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.63
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789898400000,
+     "waterLevel": 257.64,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.64
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789902000000,
+     "waterLevel": 257.62,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.62
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789905600000,
+     "waterLevel": 257.62,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.62
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789909200000,
+     "waterLevel": 257.63,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.63
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789912800000,
+     "waterLevel": 257.65,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.65
+    },
+    {
+     "date": "9/20",
+     "timestamp": 1789916400000,
+     "waterLevel": 257.68,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.68
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789920000000,
+     "waterLevel": 257.68,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.68
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789923600000,
+     "waterLevel": 257.7,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.7
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789927200000,
+     "waterLevel": 257.72,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.72
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789930800000,
+     "waterLevel": 257.74,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.74
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789934400000,
+     "waterLevel": 257.74,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.74
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789938000000,
+     "waterLevel": 257.75,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.75
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789941600000,
+     "waterLevel": 257.78,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.78
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789945200000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789948800000,
+     "waterLevel": 255,
+     "volume": 0.63,
+     "inflow": 2.4,
+     "outflow": 2.8,
+     "value": 255
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789952400000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789956000000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789959600000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789963200000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789966800000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789970400000,
+     "waterLevel": 257.78,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.78
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789974000000,
+     "waterLevel": 257.76,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.76
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789977600000,
+     "waterLevel": 257.76,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.76
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789981200000,
+     "waterLevel": 257.73,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.73
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789984800000,
+     "waterLevel": 257.73,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.73
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789988400000,
+     "waterLevel": 257.71,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.71
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789992000000,
+     "waterLevel": 257.7,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.7
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789995600000,
+     "waterLevel": 257.69,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.69
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789999200000,
+     "waterLevel": 257.69,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.69
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1790002800000,
+     "waterLevel": 257.68,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.68
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790006400000,
+     "waterLevel": 257.64,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.64
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790010000000,
+     "waterLevel": 257.62,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.62
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790013600000,
+     "waterLevel": 257.64,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.64
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790017200000,
+     "waterLevel": 257.62,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.62
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790020800000,
+     "waterLevel": 257.91,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.91
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790024400000,
+     "waterLevel": 257.53,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.53
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790028000000,
+     "waterLevel": 257.58,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.58
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790031600000,
+     "waterLevel": 257.52,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.52
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790035200000,
+     "waterLevel": 257.54,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.54
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790038800000,
+     "waterLevel": 257.54,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.54
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790042400000,
+     "waterLevel": 257.5,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.5
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790046000000,
+     "waterLevel": 257.46,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.46
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790049600000,
+     "waterLevel": 257.85,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.85
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790053200000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790056800000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790060400000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790064000000,
+     "waterLevel": 257.87,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.87
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790067600000,
+     "waterLevel": 255,
+     "volume": 0.63,
+     "inflow": 2.4,
+     "outflow": 2.8,
+     "value": 255
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790071200000,
+     "waterLevel": 257.85,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.85
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790074800000,
+     "waterLevel": 257.86,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.86
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790078400000,
+     "waterLevel": 257.87,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.87
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790082000000,
+     "waterLevel": 257.88,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.88
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790085600000,
+     "waterLevel": 257.88,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.88
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790089200000,
+     "waterLevel": 257.87,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.87
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790092800000,
+     "waterLevel": 257.87,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.87
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790096400000,
+     "waterLevel": 257.86,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.86
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790100000000,
+     "waterLevel": 257.86,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.86
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790103600000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790107200000,
+     "waterLevel": 257.86,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.86
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790110800000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790114400000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790118000000,
+     "waterLevel": 257.69,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.69
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790121600000,
+     "waterLevel": 257.15,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.15
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790125200000,
+     "waterLevel": 257.14,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.14
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790128800000,
+     "waterLevel": 257.14,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.14
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790132400000,
+     "waterLevel": 257.09,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.09
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790136000000,
+     "waterLevel": 257.07,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.07
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790139600000,
+     "waterLevel": 257.05,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.05
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790143200000,
+     "waterLevel": 257.76,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.76
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790146800000,
+     "waterLevel": 255,
+     "volume": 0.63,
+     "inflow": 2.3,
+     "outflow": 2.7,
+     "value": 255
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790150400000,
+     "waterLevel": 255,
+     "volume": 0.63,
+     "inflow": 2.4,
+     "outflow": 2.8,
+     "value": 255
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790154000000,
+     "waterLevel": 258.08,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.08
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790157600000,
+     "waterLevel": 257.53,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.53
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790161200000,
+     "waterLevel": 257.65,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.65
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790164800000,
+     "waterLevel": 263.91,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.91
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790168400000,
+     "waterLevel": 263.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.9
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790172000000,
+     "waterLevel": 263.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.9
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790175600000,
+     "waterLevel": 263.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.9
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790179200000,
+     "waterLevel": 257.3,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.3
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790182800000,
+     "waterLevel": 256.89,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 256.89
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790186400000,
+     "waterLevel": 260.43,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 260.43
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790190000000,
+     "waterLevel": 260.07,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 260.07
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790193600000,
+     "waterLevel": 263.28,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.28
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790197200000,
+     "waterLevel": 263.89,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.89
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790200800000,
+     "waterLevel": 263.89,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.89
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790204400000,
+     "waterLevel": 263.89,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.89
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790208000000,
+     "waterLevel": 263.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.9
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790211600000,
+     "waterLevel": 263.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.9
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790215200000,
+     "waterLevel": 263.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.9
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790218800000,
+     "waterLevel": 263.91,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.91
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790222400000,
+     "waterLevel": 263.91,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.91
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790226000000,
+     "waterLevel": 263.91,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.91
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790229600000,
+     "waterLevel": 257.58,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.58
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790233200000,
+     "waterLevel": 257.55,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.55
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790236800000,
+     "waterLevel": 260.85,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 260.85
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790240400000,
+     "waterLevel": 258.02,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.02
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790244000000,
+     "waterLevel": 257.63,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.63
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790247600000,
+     "waterLevel": 257.67,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.67
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790251200000,
+     "waterLevel": 258.2,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.2
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790254800000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790258400000,
+     "waterLevel": 257.78,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.78
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790262000000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790265600000,
+     "waterLevel": 257.81,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790269200000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790272800000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790276400000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790280000000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790283600000,
+     "waterLevel": 257.81,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790287200000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790290800000,
+     "waterLevel": 257.81,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790294400000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790298000000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790301600000,
+     "waterLevel": 257.81,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790305200000,
+     "waterLevel": 257.61,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.61
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790308800000,
+     "waterLevel": 257.84,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.84
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790312400000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790316000000,
+     "waterLevel": 257.81,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790319600000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790323200000,
+     "waterLevel": 257.79,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.79
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790326800000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790330400000,
+     "waterLevel": 257.81,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.81
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790334000000,
+     "waterLevel": 263.91,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.91
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790337600000,
+     "waterLevel": 258.14,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.14
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790341200000,
+     "waterLevel": 257.53,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.53
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790344800000,
+     "waterLevel": 257.53,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.53
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790348400000,
+     "waterLevel": 257.54,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.54
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790352000000,
+     "waterLevel": 257.51,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.51
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790355600000,
+     "waterLevel": 258.17,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.17
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790359200000,
+     "waterLevel": 258.15,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.15
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790362800000,
+     "waterLevel": 258.08,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.08
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790366400000,
+     "waterLevel": 257.82,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.82
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790370000000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790373600000,
+     "waterLevel": 257.8,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.8
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790377200000,
+     "waterLevel": 257.78,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 257.78
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790380800000,
+     "waterLevel": 263.88,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.88
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790384400000,
+     "waterLevel": 263.9,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 263.9
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790388000000,
+     "waterLevel": 258.33,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.33
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790391600000,
+     "waterLevel": 255,
+     "volume": 0.63,
+     "inflow": 2.4,
+     "outflow": 2.8,
+     "value": 255
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790395200000,
+     "waterLevel": 258.3,
+     "volume": null,
+     "inflow": null,
+     "outflow": null,
+     "value": 258.3
+    }
+   ]
+  },
+  "613K0901": {
+   "name": "白沙",
+   "rows": [
+    {
+     "date": "9/20",
+     "timestamp": 1789862400000,
+     "waterLevel": 334.06,
+     "volume": 1.14,
+     "inflow": 0.1,
+     "outflow": 0.2,
+     "value": 334.06
+    },
+    {
+     "date": "9/21",
+     "timestamp": 1789948800000,
+     "waterLevel": 353.03,
+     "volume": 1.39,
+     "inflow": 0.1,
+     "outflow": 0.3,
+     "value": 353.03
+    },
+    {
+     "date": "9/22",
+     "timestamp": 1790035200000,
+     "waterLevel": 353.9,
+     "volume": 1.41,
+     "inflow": 0.12,
+     "outflow": 0.3,
+     "value": 353.9
+    },
+    {
+     "date": "9/23",
+     "timestamp": 1790121600000,
+     "waterLevel": 353.8,
+     "volume": 1.38,
+     "inflow": 0.12,
+     "outflow": 0.2,
+     "value": 353.8
+    },
+    {
+     "date": "9/24",
+     "timestamp": 1790208000000,
+     "waterLevel": 353.7,
+     "volume": 1.35,
+     "inflow": 0.12,
+     "outflow": 0.2,
+     "value": 353.7
+    },
+    {
+     "date": "9/25",
+     "timestamp": 1790294400000,
+     "waterLevel": 353.6,
+     "volume": 1.31,
+     "inflow": 0.11,
+     "outflow": 0.2,
+     "value": 353.6
+    },
+    {
+     "date": "9/26",
+     "timestamp": 1790380800000,
+     "waterLevel": 353.5,
+     "volume": 1.3,
+     "inflow": 0.11,
+     "outflow": 0.2,
+     "value": 353.5
+    }
+   ]
+  }
+ }
+}

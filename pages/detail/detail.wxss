@@ -1,0 +1,153 @@
+@import "../../assets/icons.wxss";
+
+.page{min-height:100vh;padding-bottom:calc(76rpx + env(safe-area-inset-bottom));background:#f4f8fc}
+
+/* ============================================================
+   沉浸式头部
+   ============================================================ */
+.header{position:relative;overflow:hidden;padding:54rpx 28rpx 46rpx;border-radius:0 0 36rpx 36rpx;color:#fff;background:#0e4d64;box-shadow:0 20rpx 46rpx rgba(14,77,100,.26)}
+.header-bg{position:absolute;top:0;right:0;bottom:0;left:0;background:radial-gradient(circle at 86% 6%,rgba(255,255,255,.26),transparent 30%)}
+.header-aurora{position:absolute;top:-160rpx;right:-120rpx;width:440rpx;height:440rpx;border-radius:50%;background:radial-gradient(circle,rgba(94,212,235,.42) 0%,rgba(94,212,235,0) 70%);animation:qd-aurora 22s ease-in-out infinite}
+.header-ring{position:absolute;border:2rpx solid rgba(255,255,255,.2);pointer-events:none}
+.ring-a{right:-88rpx;bottom:-130rpx;width:310rpx;height:310rpx;border-radius:48% 52% 60% 40%;animation:qd-float 10s ease-in-out infinite}
+.ring-b{right:60rpx;bottom:-90rpx;width:190rpx;height:190rpx;border:2rpx solid rgba(255,255,255,.12);border-radius:52% 48% 56% 44%;animation:qd-float 12s ease-in-out infinite reverse}
+
+.header.reservoir{background:linear-gradient(140deg,#0e4d64 0%,#0b4f8a 60%,#2e86b8 100%)}
+.header.river{background:linear-gradient(140deg,#0d5566 0%,#0e7d8a 60%,#17a6b4 100%)}
+.header.soil{background:linear-gradient(140deg,#2f5c1f 0%,#4c8a2c 60%,#74b23e 100%)}
+
+.header-top{position:relative;z-index:1;display:flex;align-items:center;margin-bottom:22rpx}
+.station-icon{display:flex;align-items:center;justify-content:center;width:88rpx;height:88rpx;margin-right:20rpx;border:1rpx solid rgba(255,255,255,.34);border-radius:26rpx;background:rgba(255,255,255,.18);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.4),0 8rpx 20rpx rgba(6,38,54,.18);backdrop-filter:blur(14rpx)}
+.station-icon .ic{width:44rpx;height:44rpx}
+.station-info{min-width:0;flex:1}
+.station-name{overflow:hidden;margin-bottom:9rpx;font-size:38rpx;font-weight:700;letter-spacing:.5rpx;text-overflow:ellipsis;white-space:nowrap;text-shadow:0 2rpx 12rpx rgba(6,38,54,.22)}
+.station-address{overflow:hidden;font-size:22rpx;opacity:.85;text-overflow:ellipsis;white-space:nowrap}
+.station-status{padding:8rpx 14rpx;border:1rpx solid rgba(255,255,255,.28);border-radius:999rpx;background:rgba(255,255,255,.2);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.34);font-size:22rpx;font-weight:600}
+.update-time{position:relative;z-index:1;font-size:22rpx;opacity:.82}
+
+/* ============================================================
+   卡片
+   ============================================================ */
+.content{padding:24rpx}
+.card{position:relative;margin-bottom:22rpx;padding:30rpx 28rpx;border:1rpx solid rgba(215,232,240,.92);border-radius:28rpx;background:linear-gradient(180deg,#ffffff 0%,#fdfeff 100%);box-shadow:var(--qd-e2),var(--qd-hairline-top)}
+.card-title{display:flex;align-items:center;margin-bottom:26rpx;color:#123a4a;font-size:32rpx;font-weight:700;letter-spacing:.5rpx}
+.card-title::before{width:7rpx;height:30rpx;margin-right:12rpx;border-radius:7rpx;background:linear-gradient(180deg,#0e9bb8 0%,#0e4d64 100%);box-shadow:0 0 12rpx rgba(14,155,184,.4);content:''}
+.card-title .chart-tabs{margin-left:auto}
+
+/* ---------- 监测数据 ---------- */
+/* 注意：真机（微信基础库）不支持 flex 的 gap —— 含 gap 的整条规则在真机上会失效，
+   弹性布局退化为块级堆叠，指标块就会一个一个竖着排。故这里用 justify-content:space-between
+   做列间距、子项 margin-bottom 做行间距；子项 float 仅在 flex 失效时兜底成两列。 */
+.realtime-grid{display:flex;flex-wrap:wrap;justify-content:space-between;overflow:hidden}
+.realtime-item{box-sizing:border-box;float:left;width:calc(50% - 7rpx);margin-bottom:14rpx;padding:24rpx 18rpx;border:1rpx solid rgba(215,232,240,.72);border-radius:20rpx;background:linear-gradient(160deg,#f6fbfe 0%,#eef6fb 100%);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.9);text-align:center;transition:transform var(--qd-t-base) var(--qd-ease-spring),box-shadow var(--qd-t-base) var(--qd-ease),background var(--qd-t-base) ease}
+/* 落单的指标铺满整行，避免栅格右下出现空洞 */
+.realtime-item:only-child{width:100%}
+.realtime-grid .realtime-item:last-child:nth-child(odd){width:100%}
+/* 显式整行：真机对伪类选择器支持不可靠（:only-child / :nth-child 可能被整条丢弃），
+   墒情站的「地温」是唯一落单项，这里不靠伪类兜底。 */
+.realtime-item-wide{float:none;width:100%}
+.realtime-value{margin-bottom:9rpx;color:#0e4d64;font-size:42rpx;font-weight:700;letter-spacing:-1rpx;line-height:1.1}
+.realtime-unit{margin-left:4rpx;color:#6b8798;font-size:22rpx;font-weight:400;letter-spacing:0}
+.realtime-label{color:#7891a4;font-size:22rpx}
+/* 入库/出库的净差值：只陈述两个数之差，不给方向性结论 */
+.realtime-note{margin-top:4rpx;color:#6b8798;font-size:23rpx;text-align:center}
+.realtime-note .num{color:#0e4d64;font-weight:700}
+
+/* ---------- 土壤区 ---------- */
+/* 主指标：整卡最高层级，三类站点统一形态 */
+.metric-hero{position:relative;display:flex;align-items:stretch;margin-bottom:18rpx;border:1rpx solid rgba(14,155,184,.22);border-radius:22rpx;background:linear-gradient(135deg,#eef8fc 0%,#e3f1f9 100%);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.9);overflow:hidden}
+.metric-hero-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+/* 主指标带内的指标格：flex:1 均分；同类两个指标并排（水库 水位+库容 / 河道 水位+流量） */
+.metric-hero-cell{box-sizing:border-box;flex:1 1 0;min-width:0;padding:26rpx 22rpx}
+/* 两格之间的细分隔线：单格时不渲染（由模板 wx:if 控制），不用伪类选择器以免真机失效 */
+.metric-hero-divider{flex:0 0 1rpx;align-self:stretch;margin:26rpx 0;background:linear-gradient(180deg,rgba(14,155,184,0) 0%,rgba(14,155,184,.32) 50%,rgba(14,155,184,0) 100%)}
+.metric-hero.soil .metric-hero-divider{background:linear-gradient(180deg,rgba(95,158,58,0) 0%,rgba(95,158,58,.32) 50%,rgba(95,158,58,0) 100%)}
+/* 带内数值降一档（两格并排时 62rpx 会挤压），仍高于次级栅格的 42rpx */
+.metric-hero-cell .metric-hero-value{font-size:52rpx;letter-spacing:-1rpx}
+/* 带内补充说明（如「占总库容 43.1%」） */
+.metric-hero-note{margin-top:8rpx;color:#0e6a80;font-size:22rpx}
+.metric-hero-label{color:#5e7f90;font-size:23rpx;font-weight:600;letter-spacing:.5rpx}
+.metric-hero-value{margin-top:10rpx;color:#0b4f8a;font-size:62rpx;font-weight:700;letter-spacing:-1.5rpx;line-height:1.05}
+.metric-hero-delta{padding:6rpx 14rpx;border-radius:999rpx;background:rgba(14,155,184,.14);color:#0e6a80;font-size:22rpx;font-weight:600}
+.metric-hero-delta.over{background:#fff2f0;color:#c33d25}
+.metric-hero-delta.warning,.metric-hero-delta.dry{background:#fff8e8;color:#a96900}
+.metric-hero-delta.danger,.metric-hero-delta.drought{background:#fff2f0;color:#c33d25}
+.metric-hero-delta.wet{background:#e6f7fc;color:#0e6a80}
+.metric-hero-delta.unknown{background:#eef4f8;color:#5e7f90}
+.metric-hero.soil{border-color:#dcedd3;background:linear-gradient(135deg,#fbfdf6 0%,#eef8e2 100%)}
+.metric-hero.soil .metric-hero-label{color:#486b36}
+.metric-hero.soil .metric-hero-value{color:#437d25}
+.metric-hero.soil .metric-hero-delta.normal{background:#eaf6dd;color:#4f7a14}
+/* 全字段缺失时的空态，避免只剩标题的空卡片 */
+.metric-empty{padding:36rpx 0;color:#8aa5b4;font-size:24rpx;text-align:center}
+.soil-profile{box-sizing:border-box;width:100%;padding:24rpx;border:1rpx solid #dcedd3;border-radius:22rpx;background:linear-gradient(165deg,#fbfdf6 0%,#f4faea 100%);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.9)}
+.soil-profile .soil-section-title{margin-top:0}
+.soil-section-title{margin:22rpx 0 14rpx;padding-left:14rpx;border-left:5rpx solid #5f9e3a;color:#486b36;font-size:23rpx;font-weight:700;letter-spacing:.5rpx}
+.soil-layer-row{display:flex;align-items:center;padding:12rpx 0}
+.soil-layer-depth{width:70rpx;color:#406c2d;font-size:28rpx;font-weight:700}
+.soil-layer-depth text{margin-left:2rpx;font-size:20rpx;font-weight:400}
+.soil-layer-track{overflow:hidden;flex:1;height:18rpx;border-radius:999rpx;background:#e9f4e2;box-shadow:inset 0 1rpx 2rpx rgba(64,108,45,.12)}
+.soil-layer-fill{height:100%;border-radius:inherit;transform-origin:left center;animation:qd-bar-grow .9s var(--qd-ease-out) .2s both;transition:width .5s var(--qd-ease-out)}
+.fill-10{background:linear-gradient(90deg,#1f8fc4,#4f9ff3)}
+.fill-20{background:linear-gradient(90deg,#12a5ac,#36bcb3)}
+.fill-40{background:linear-gradient(90deg,#7a63c9,#8e73d6)}
+.soil-layer-value{width:90rpx;margin-left:12rpx;color:#426438;font-size:24rpx;text-align:right}
+
+/* ---------- 图表 ---------- */
+.chart-tabs{display:flex;padding:4rpx;border:1rpx solid rgba(215,232,240,.9);border-radius:14rpx;background:#eef4f8;box-shadow:inset 0 1rpx 2rpx rgba(14,77,100,.06)}
+.chart-tab{padding:18rpx 20rpx;border-radius:10rpx;color:#6c879b;font-size:22rpx;transition:all var(--qd-t-base) var(--qd-ease)}
+.chart-tab.active{color:#0e4d64;background:#fff;box-shadow:0 3rpx 10rpx rgba(14,77,100,.14),inset 0 1rpx 0 rgba(255,255,255,.9);font-weight:600}
+.trend-caption{margin:-4rpx 0 16rpx 18rpx;color:#7891a4;font-size:22rpx}
+.soil-trend-scroll{width:100%;margin-bottom:5rpx;white-space:nowrap}
+.soil-trend-tabs{display:inline-flex;padding:14rpx 0}
+.soil-trend-tab{display:inline-flex;align-items:center;justify-content:center;margin-right:10rpx;padding:19rpx 13rpx;border:1rpx solid;border-radius:999rpx;font-size:22rpx;transition:transform var(--qd-t-fast) var(--qd-ease-spring)}
+.soil-trend-tab:active{transform:scale(.94)}
+.chart-canvas{margin-top:12rpx;border-radius:18rpx;background:linear-gradient(180deg,#fbfdff 0%,#f4f9fd 100%);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.9),inset 0 0 0 1rpx rgba(215,232,240,.7)}
+/* 过程图图例：河道（水位/流量/警戒水位）与水库（水位/入库/出库）共用同一套样式 */
+.process-legend{display:flex;flex-wrap:wrap;margin:-5rpx 0 8rpx 18rpx;color:#6b8798;font-size:22rpx}
+.process-legend-item{display:flex;align-items:center;margin:0 18rpx 10rpx 0}
+.process-legend-line{width:24rpx;height:4rpx;margin-right:6rpx;border-radius:4rpx;background:#0e9bb8}
+.process-legend-line.water{background:#0e9bb8}
+.process-legend-line.flow{background:#0b4f8a}
+.process-legend-line.inflow{background:#0b4f8a}
+.process-legend-line.outflow{background:#7a63c9}
+.process-legend-line.warning{background:repeating-linear-gradient(90deg,#d95f5f 0 8rpx,transparent 8rpx 13rpx)}
+.river-process-note,.history-empty-desc{margin:0 0 6rpx 18rpx;color:#8aa5b4;font-size:22rpx;line-height:1.55}
+
+/* ---------- 站点信息 ---------- */
+.info-item{display:flex;align-items:center;justify-content:space-between;padding:21rpx 0;border-bottom:1rpx solid #eaf1f6}
+.info-item:last-child{border-bottom:0}
+.info-source{padding-top:18rpx;color:#9ab0bf;font-size:22rpx;line-height:1.5}
+.info-label{color:#7891a4;font-size:25rpx}
+.info-value{max-width:62%;color:#26475f;font-size:25rpx;font-weight:500;text-align:right}
+
+/* ============================================================
+   加载骨架
+   ============================================================ */
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;padding:0 40rpx}
+.skeleton-card{width:100%;padding:32rpx 28rpx;border:1rpx solid rgba(215,232,240,.9);border-radius:28rpx;background:linear-gradient(180deg,#ffffff 0%,#fdfeff 100%);box-shadow:var(--qd-e2),var(--qd-hairline-top)}
+.skeleton-block{width:100%;height:26rpx}
+.skeleton-block.head{height:52rpx;margin-bottom:28rpx;border-radius:18rpx}
+.skeleton-block.line{height:22rpx;margin-top:20rpx}
+.skeleton-block.line.short{width:58%}
+.skeleton-grid{display:flex;flex-wrap:wrap;justify-content:space-between;overflow:hidden}
+.skeleton-tile{box-sizing:border-box;float:left;width:calc(50% - 7rpx);height:132rpx;margin-bottom:14rpx;border-radius:20rpx}
+.loading-text{margin-top:30rpx;color:#8aa5b4;font-size:24rpx;letter-spacing:.5rpx}
+.load-error{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;padding:0 60rpx;text-align:center}
+.load-error-title{color:#123a4a;font-size:32rpx;font-weight:700}
+.load-error-desc{margin-top:14rpx;color:#5e7f90;font-size:24rpx;line-height:1.65}
+.load-error-retry{display:flex;align-items:center;justify-content:center;min-height:88rpx;margin-top:36rpx;padding:0 64rpx;border-radius:999rpx;color:#fff;background:linear-gradient(150deg,#0e4d64 0%,#0b4f8a 100%);font-size:28rpx;font-weight:600;box-shadow:0 10rpx 24rpx rgba(11,79,138,.26);transition:transform .18s ease}
+.load-error-retry:active{transform:scale(.97);opacity:.94}
+
+/* ===== 分层剖面与指标补充 ===== */
+.soil-profile-list{display:flex;flex-direction:column}
+.depth-10{color:#1f8fc4}
+.depth-20{color:#12a5ac}
+.depth-40{color:#7a63c9}
+.soil-indicator{border-color:#dcedd3;background:linear-gradient(165deg,#fbfdf6 0%,#f4faea 100%);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.9)}
+
+/* ===== 触控命中区补强（≥88rpx≈44pt） ===== */
+.soil-trend-tab{position:relative}
+.soil-trend-tab::after{position:absolute;top:-12rpx;right:0;bottom:-12rpx;left:0;content:''}
+.chart-tab{position:relative}
+.chart-tab::after{position:absolute;top:-13rpx;right:0;bottom:-13rpx;left:0;content:''}

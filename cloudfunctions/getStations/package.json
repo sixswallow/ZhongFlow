@@ -1,0 +1,9 @@
+{
+  "name": "getStations",
+  "version": "1.0.0",
+  "description": "站点数据查询云函数",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

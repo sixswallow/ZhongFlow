@@ -1,0 +1,115 @@
+<view class="page">
+  <map
+    id="map"
+    class="map"
+    latitude="{{centerLat}}"
+    longitude="{{centerLng}}"
+    scale="{{scale}}"
+    markers="{{markers}}"
+    polygons="{{townshipPolygons}}"
+    show-location="{{false}}"
+    enable-zoom="{{true}}"
+    enable-scroll="{{true}}"
+    enable-rotate="{{false}}"
+    show-compass="{{false}}"
+    bindmarkertap="onMarkerTap"
+    bindcallouttap="onCalloutTap"
+  ></map>
+
+  <view class="map-header anim-fade">
+    <picker class="header-region-picker" mode="selector" range="{{townshipOptions}}" value="{{townshipIndex}}" bindchange="onTownshipChange">
+      <view class="header-region {{selectedRegionName !== '中方县' && townshipFocus ? 'focus' : ''}}">
+        <view class="region-icon ic ic-pin-d"></view>
+        <text class="header-region-name">{{selectedRegionName}}</text>
+        <text class="header-region-count {{townshipFocus ? '' : 'off'}}" wx:if="{{selectedRegionName !== '中方县'}}">{{townshipStationCount > 0 ? townshipStationCount + ' 个点位' : '暂无监测点位'}}</text>
+        <text class="header-region-arrow">▾</text>
+      </view>
+    </picker>
+    <view class="header-scope-action" wx:if="{{!loadFailed && selectedRegionName !== '中方县'}}" bindtap="toggleScope">{{townshipFocus ? '显示全县' : '聚焦本乡镇'}}</view>
+    <view class="header-locate" bindtap="moveToLocation">
+      <view class="ic ic-locate-d"></view>
+    </view>
+  </view>
+
+  <view class="map-load-failed" wx:if="{{loadFailed}}" bindtap="retryLoad">
+    <view class="map-load-failed-text">站点数据获取失败</view>
+    <view class="map-load-failed-retry">点击重试</view>
+  </view>
+
+  <view class="filter-bar anim-left d2 active-{{activeFilter}}">
+    <view class="filter-slider"></view>
+    <view class="filter-item {{activeFilter === 'all' ? 'active' : ''}}" bindtap="setFilter" data-type="all">
+      <text class="filter-dot all"></text>
+      全部 ({{totalCount}})
+    </view>
+    <view class="filter-item {{activeFilter === 'reservoir' ? 'active' : ''}}" bindtap="setFilter" data-type="reservoir">
+      <text class="filter-dot reservoir"></text>
+      水库 ({{reservoirCount}})
+    </view>
+    <view class="filter-item {{activeFilter === 'river' ? 'active' : ''}}" bindtap="setFilter" data-type="river">
+      <text class="filter-dot river"></text>
+      河道 ({{riverCount}})
+    </view>
+    <view class="filter-item {{activeFilter === 'soil' ? 'active' : ''}}" bindtap="setFilter" data-type="soil">
+      <text class="filter-dot soil"></text>
+      墒情 ({{soilCount}})
+    </view>
+  </view>
+
+  <view class="map-note">
+    <text class="map-note-line"></text>
+    <text class="map-note-text">乡镇分界线</text>
+    <text class="map-note-text" wx:if="{{hiddenMarkerCount > 0}}"> · 当前展示 {{visibleMarkerCount}} 个点位，另有 {{hiddenMarkerCount}} 个未显示</text>
+  </view>
+
+  <view class="station-panel {{selectedStation ? 'show' : ''}}" wx:if="{{selectedStation}}">
+    <view class="panel-grabber"></view>
+    <view class="panel-close" bindtap="closePanel">×</view>
+    <view class="panel-header">
+      <view class="panel-icon {{selectedStation.type}}">
+        <view class="ic ic-droplet-d" wx:if="{{selectedStation.type === 'reservoir'}}"></view>
+        <view class="ic ic-wave-d" wx:elif="{{selectedStation.type === 'river'}}"></view>
+        <view class="ic ic-sprout-d" wx:else></view>
+      </view>
+      <view class="panel-info">
+        <view class="panel-name">{{selectedStation.name}}</view>
+        <view class="panel-address">{{selectedStation.address}}</view>
+      </view>
+      <view class="panel-status {{selectedStation.status}}">
+        {{selectedStation.statusText}}
+      </view>
+    </view>
+
+    <view class="panel-data">
+      <view class="data-item" wx:if="{{selectedStation.type === 'reservoir'}}">
+        <view class="data-label">当前库水位（海拔）</view>
+        <view class="data-value num">{{selectedStation.currentLevel ? selectedStation.currentLevel : '--'}}<text class="data-unit" wx:if="{{selectedStation.currentLevel}}">m</text></view>
+      </view>
+      <view class="data-item" wx:if="{{selectedStation.type === 'reservoir' && selectedStation.currentVolume}}">
+        <view class="data-label">库容</view>
+        <view class="data-value num">{{selectedStation.currentVolume}}<text class="data-unit">万m³</text></view>
+      </view>
+      <view class="data-item" wx:if="{{selectedStation.type === 'river'}}">
+        <view class="data-label">水位（海拔）</view>
+        <view class="data-value num">{{selectedStation.waterLevel ? selectedStation.waterLevel : '--'}}<text class="data-unit" wx:if="{{selectedStation.waterLevel}}">m</text></view>
+      </view>
+      <view class="data-item" wx:if="{{selectedStation.type === 'river' && selectedStation.flow}}">
+        <view class="data-label">流量</view>
+        <view class="data-value num">{{selectedStation.flow}}<text class="data-unit">m³/s</text></view>
+      </view>
+      <view class="data-item" wx:if="{{selectedStation.type === 'soil'}}">
+        <view class="data-label">土壤湿度</view>
+        <view class="data-value num">{{selectedStation.moisture ? selectedStation.moisture : '--'}}<text class="data-unit" wx:if="{{selectedStation.moisture}}">%</text></view>
+      </view>
+      <view class="data-item" wx:if="{{selectedStation.type === 'soil' && selectedStation.temperature}}">
+        <view class="data-label">地温</view>
+        <view class="data-value num">{{selectedStation.temperature}}<text class="data-unit">°C</text></view>
+      </view>
+    </view>
+
+    <view class="panel-footer">
+      <view class="update-time num">更新时间：{{selectedStation.updateTime}}</view>
+      <view class="detail-btn" bindtap="goToDetail">查看详情</view>
+    </view>
+  </view>
+</view>

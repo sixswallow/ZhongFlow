@@ -1,0 +1,256 @@
+<view class="page" wx:if="{{station}}">
+  <view class="header {{station.type}}">
+    <view class="header-bg"></view>
+    <view class="header-aurora"></view>
+    <view class="header-ring ring-a"></view>
+    <view class="header-ring ring-b"></view>
+
+    <view class="header-top anim-up">
+      <view class="station-icon">
+        <view class="ic ic-droplet-w" wx:if="{{station.type === 'reservoir'}}"></view>
+        <view class="ic ic-wave-w" wx:elif="{{station.type === 'river'}}"></view>
+        <view class="ic ic-sprout-w" wx:else></view>
+      </view>
+      <view class="station-info">
+        <view class="station-name">{{station.name}}</view>
+        <view class="station-address">{{station.address}}</view>
+      </view>
+      <view class="station-status {{station.status}}">{{display.statusText}}</view>
+    </view>
+    <view class="update-time anim-fade d2">数据更新时间：{{station.updateTime}}</view>
+  </view>
+
+  <view class="content">
+    <view class="card anim-up d1">
+      <view class="card-title">监测数据</view>
+
+      <view class="metric-empty" wx:if="{{!display.hasMonitoringData}}">该站点暂未上报监测数据</view>
+
+            <view class="metric-hero" wx:if="{{station.type === 'reservoir' && (display.currentLevelText !== '--' || display.showVolume)}}">
+        <!-- 同类成对：水位(蓄水现状) 与 库容(蓄水总量) 同排 -->
+        <view class="metric-hero-cell" wx:if="{{display.currentLevelText !== '--'}}">
+          <view class="metric-hero-head">
+            <view class="metric-hero-label">当前库水位（海拔）</view>
+          </view>
+          <view class="metric-hero-value num">{{display.currentLevelText}}<text class="realtime-unit">m</text></view>
+        </view>
+        <view class="metric-hero-divider" wx:if="{{display.currentLevelText !== '--' && display.showVolume}}"></view>
+        <view class="metric-hero-cell" wx:if="{{display.showVolume}}">
+          <view class="metric-hero-head">
+            <view class="metric-hero-label">当前库容</view>
+          </view>
+          <view class="metric-hero-value num">{{display.currentVolumeText}}<text class="realtime-unit">万m³</text></view>
+          <view class="metric-hero-note" wx:if="{{display.volumePercent}}">占汛限水位库容 {{display.volumePercent}}%</view>
+        </view>
+      </view>
+
+      <view class="metric-hero" wx:if="{{station.type === 'river' && (display.waterLevelText !== '--' || display.showFlow)}}">
+        <!-- 同类成对：水位与流量正是「河道水文过程」图上的两条曲线 -->
+        <view class="metric-hero-cell" wx:if="{{display.waterLevelText !== '--'}}">
+          <view class="metric-hero-head">
+            <view class="metric-hero-label">水位（海拔）</view>
+            <view class="metric-hero-delta {{display.warningDiffState}}" wx:if="{{display.warningDiff}}">{{display.warningDiffText}} {{display.warningDiffAbs}}m</view>
+          </view>
+          <view class="metric-hero-value num">{{display.waterLevelText}}<text class="realtime-unit">m</text></view>
+        </view>
+        <view class="metric-hero-divider" wx:if="{{display.waterLevelText !== '--' && display.showFlow}}"></view>
+        <view class="metric-hero-cell" wx:if="{{display.showFlow}}">
+          <view class="metric-hero-head">
+            <view class="metric-hero-label">流量</view>
+          </view>
+          <view class="metric-hero-value num">{{display.flowText}}<text class="realtime-unit">m³/s</text></view>
+        </view>
+      </view>
+
+      <!-- 墒情主指标带：含水量（现在有多湿）与相对含水率（旱情程度）同类成对 -->
+      <view class="metric-hero soil" wx:if="{{station.type === 'soil' && (display.showAverageMoisture || display.showRelativeMoisture)}}">
+        <view class="metric-hero-cell" wx:if="{{display.showAverageMoisture}}">
+          <view class="metric-hero-head">
+            <view class="metric-hero-label">{{display.averageMoistureLabel}}</view>
+            <view class="metric-hero-delta {{station.status}}">{{display.statusText}}</view>
+          </view>
+          <view class="metric-hero-value num">{{display.averageMoistureText}}<text class="realtime-unit">%</text></view>
+        </view>
+        <view class="metric-hero-divider" wx:if="{{display.showAverageMoisture && display.showRelativeMoisture}}"></view>
+        <view class="metric-hero-cell" wx:if="{{display.showRelativeMoisture}}">
+          <view class="metric-hero-head">
+            <view class="metric-hero-label">相对含水率</view>
+          </view>
+          <view class="metric-hero-value num">{{display.relativeMoistureText}}<text class="realtime-unit">%</text></view>
+          <view class="metric-hero-note">反映当前旱情程度</view>
+        </view>
+      </view>
+
+<view class="soil-profile" wx:if="{{station.type === 'soil' && display.showDepthMoistures}}">
+        <view class="soil-section-title">分层含水量</view>
+        <view class="soil-profile-list">
+          <view class="soil-layer-row" wx:if="{{display.showMoisture10}}">
+            <view class="soil-layer-depth depth-10">10<text>cm</text></view>
+            <view class="soil-layer-track"><view class="soil-layer-fill fill-10" style="width: {{display.moisture10Text}}%"></view></view>
+            <view class="soil-layer-value num">{{display.moisture10Text}}%</view>
+          </view>
+          <view class="soil-layer-row" wx:if="{{display.showMoisture20}}">
+            <view class="soil-layer-depth depth-20">20<text>cm</text></view>
+            <view class="soil-layer-track"><view class="soil-layer-fill fill-20" style="width: {{display.moisture20Text}}%"></view></view>
+            <view class="soil-layer-value num">{{display.moisture20Text}}%</view>
+          </view>
+          <view class="soil-layer-row" wx:if="{{display.showMoisture40}}">
+            <view class="soil-layer-depth depth-40">40<text>cm</text></view>
+            <view class="soil-layer-track"><view class="soil-layer-fill fill-40" style="width: {{display.moisture40Text}}%"></view></view>
+            <view class="soil-layer-value num">{{display.moisture40Text}}%</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="realtime-grid">
+        <view class="realtime-item" wx:if="{{station.type === 'reservoir' && display.showInflow}}">
+          <view class="realtime-value num">{{display.inflowText}}<text class="realtime-unit">m³/s</text></view>
+          <view class="realtime-label">入库流量</view>
+        </view>
+        <view class="realtime-item" wx:if="{{station.type === 'reservoir' && display.showOutflow}}">
+          <view class="realtime-value num">{{display.outflowText}}<text class="realtime-unit">m³/s</text></view>
+          <view class="realtime-label">出库流量</view>
+        </view>
+        <view class="realtime-item" wx:if="{{station.type === 'river' && display.showTemperature}}">
+          <view class="realtime-value num">{{display.temperatureText}}<text class="realtime-unit">°C</text></view>
+          <view class="realtime-label">水温</view>
+        </view>
+        <view class="realtime-item" wx:if="{{station.type === 'river' && display.showWaterQuality}}">
+          <view class="realtime-value">{{station.waterQuality}}</view>
+          <view class="realtime-label">水质</view>
+        </view>
+        <!-- 墒情站只剩「地温」一个次级指标：显式整行，不依赖只在部分基础库生效的伪类选择器 -->
+        <view class="realtime-item soil-indicator realtime-item-wide" wx:if="{{station.type === 'soil' && display.showTemperature}}">
+          <view class="realtime-value num">{{display.temperatureText}}<text class="realtime-unit">°C</text></view>
+          <view class="realtime-label">地温</view>
+        </view>
+      </view>
+      <view class="realtime-note" wx:if="{{station.type === 'reservoir' && display.hasNetFlow}}">{{display.netFlowLabel}}<text class="num" wx:if="{{display.netFlowValue}}"> {{display.netFlowValue}} m³/s</text></view>
+    </view>
+
+    <view class="card anim-up d2" wx:if="{{station.type === 'reservoir'}}">
+      <view class="card-title">
+        {{reservoirProcessTitle}}
+        <view class="chart-tabs">
+          <view class="chart-tab {{chartDays === 7 ? 'active' : ''}}" bindtap="setChartDays" data-days="7">7天</view>
+          <view class="chart-tab {{chartDays === 15 ? 'active' : ''}}" bindtap="setChartDays" data-days="15">15天</view>
+          <view class="chart-tab {{chartDays === 30 ? 'active' : ''}}" bindtap="setChartDays" data-days="30">30天</view>
+        </view>
+      </view>
+      <view class="process-legend">
+        <view class="process-legend-item"><text class="process-legend-line water"></text>水位 (m)</view>
+        <view class="process-legend-item" wx:if="{{reservoirHasFlow}}"><text class="process-legend-line inflow"></text>入库 (m³/s)</view>
+        <view class="process-legend-item" wx:if="{{reservoirHasFlow}}"><text class="process-legend-line outflow"></text>出库 (m³/s)</view>
+      </view>
+      <canvas type="2d" id="levelChart" class="chart-canvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"></canvas>
+      <view class="history-empty-desc" wx:if="{{chartData.length === 0}}">{{chartLoadFailed ? '趋势数据加载失败，可下拉刷新重试。' : '当前时间范围内暂无水位记录。'}}</view>
+    </view>
+
+    <view class="card anim-up d2" wx:if="{{station.type === 'soil'}}">
+      <view class="card-title">
+        含水量趋势
+        <view class="chart-tabs">
+          <view class="chart-tab {{chartDays === 7 ? 'active' : ''}}" bindtap="setChartDays" data-days="7">7天</view>
+          <view class="chart-tab {{chartDays === 15 ? 'active' : ''}}" bindtap="setChartDays" data-days="15">15天</view>
+          <view class="chart-tab {{chartDays === 30 ? 'active' : ''}}" bindtap="setChartDays" data-days="30">30天</view>
+        </view>
+      </view>
+      <view class="trend-caption">单位：{{activeSoilTrendUnit}}</view>
+      <scroll-view class="soil-trend-scroll" scroll-x="true" show-scrollbar="false">
+        <view class="soil-trend-tabs">
+          <view wx:for="{{soilTrendOptions}}" wx:key="key" class="soil-trend-tab {{activeSoilTrend === item.key ? 'active' : ''}}" bindtap="setSoilTrend" data-key="{{item.key}}" data-label="{{item.label}}" data-unit="{{item.unit}}" style="border-color: {{item.color}}; color: {{activeSoilTrend === item.key ? '#fff' : item.color}}; background: {{activeSoilTrend === item.key ? item.color : '#fff'}}">{{item.label}}</view>
+        </view>
+      </scroll-view>
+      <canvas type="2d" id="moistureChart" class="chart-canvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"></canvas>
+      <view class="history-empty-desc" wx:if="{{chartData.length === 0}}">{{chartLoadFailed ? '趋势数据加载失败，可下拉刷新重试。' : '当前时间范围内暂无墒情记录。'}}</view>
+    </view>
+
+    <view class="card anim-up d2" wx:if="{{station.type === 'river'}}">
+      <view class="card-title">
+        河道水文过程
+        <view class="chart-tabs">
+          <view class="chart-tab {{chartDays === 7 ? 'active' : ''}}" bindtap="setChartDays" data-days="7">7天</view>
+          <view class="chart-tab {{chartDays === 15 ? 'active' : ''}}" bindtap="setChartDays" data-days="15">15天</view>
+          <view class="chart-tab {{chartDays === 30 ? 'active' : ''}}" bindtap="setChartDays" data-days="30">30天</view>
+        </view>
+      </view>
+      <view class="process-legend">
+        <view class="process-legend-item"><text class="process-legend-line water"></text>水位 (m)</view>
+        <view class="process-legend-item" wx:if="{{riverHasFlow}}"><text class="process-legend-line flow"></text>流量 (m³/s)</view>
+        <view class="process-legend-item"><text class="process-legend-line warning"></text>警戒水位 (m)</view>
+      </view>
+      <view class="river-process-note" wx:if="{{!riverHasFlow}}">该站点水文过程未返回流量数据，本图仅展示水位及警戒水位参考线。</view>
+      <canvas type="2d" id="riverChart" class="chart-canvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"></canvas>
+      <view class="history-empty-desc" wx:if="{{chartData.length === 0}}">{{chartLoadFailed ? '趋势数据加载失败，可下拉刷新重试。' : '当前时间范围内暂无河道水文过程记录。'}}</view>
+    </view>
+
+    <view class="card anim-up d3">
+      <view class="card-title">站点信息</view>
+      <view class="info-list">
+        <view class="info-item">
+          <view class="info-label">站点编号</view>
+          <view class="info-value num">{{station.id}}</view>
+        </view>
+        <view class="info-item">
+          <view class="info-label">经纬度</view>
+          <view class="info-value num" wx:if="{{display.hasCoordinates}}">{{display.latitudeText}}°N, {{display.longitudeText}}°E</view>
+          <view class="info-value" wx:else>暂未获取站点坐标</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'soil' && display.showSoilType}}">
+          <view class="info-label">土壤类型</view>
+          <view class="info-value">{{display.soilTypeText}}</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'soil' && display.showDepth}}">
+          <view class="info-label">默认监测层</view>
+          <view class="info-value num">{{display.depthText}}</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'soil' && display.showSaturatedMoisture}}">
+          <view class="info-label">饱和含水率</view>
+          <view class="info-value num">{{display.saturatedMoistureText}}%</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'reservoir' && station.capacity}}">
+          <view class="info-label">汛限水位库容</view>
+          <view class="info-value num">{{station.capacity}} 万m³</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'reservoir' && station.normalLevel}}">
+          <view class="info-label">正常蓄水位</view>
+          <view class="info-value num">{{station.normalLevel}} m</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'reservoir' && station.warningLevel}}">
+          <view class="info-label">汛限水位</view>
+          <view class="info-value num">{{station.warningLevel}} m</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'river' && station.warningLevel}}">
+          <view class="info-label">警戒水位</view>
+          <view class="info-value num">{{station.warningLevel}} m</view>
+        </view>
+        <view class="info-item" wx:if="{{station.type === 'river' && station.guaranteedLevel}}">
+          <view class="info-label">保证水位</view>
+          <view class="info-value num">{{station.guaranteedLevel}} m</view>
+        </view>
+        <view class="info-source" wx:if="{{station.featureLevelSource}}">特征水位口径：海拔高程（1985 国家高程基准） · {{station.featureLevelSource}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="loading" wx:elif="{{!loadFailed}}">
+  <view class="skeleton-card">
+    <view class="sk skeleton-block head"></view>
+    <view class="skeleton-grid">
+      <view class="sk skeleton-tile"></view>
+      <view class="sk skeleton-tile"></view>
+      <view class="sk skeleton-tile"></view>
+      <view class="sk skeleton-tile"></view>
+    </view>
+    <view class="sk skeleton-block line"></view>
+    <view class="sk skeleton-block line short"></view>
+  </view>
+  <view class="loading-text">正在加载站点数据…</view>
+</view>
+
+<view class="load-error" wx:else>
+  <view class="load-error-title">站点数据未能加载</view>
+  <view class="load-error-desc">可能是网络或数据源暂时不可用，也可能是该站点已不在监测范围内。</view>
+  <view class="load-error-retry" bindtap="retryLoad">重新加载</view>
+</view>

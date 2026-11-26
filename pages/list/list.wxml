@@ -1,0 +1,90 @@
+<view class="page">
+  <view class="search-bar">
+    <view class="search-box">
+      <view class="search-icon ic ic-search-g"></view>
+      <input
+        class="search-input"
+        placeholder="搜索站点名称或地址"
+        value="{{keyword}}"
+        bindinput="onSearchInput"
+        confirm-type="search"
+        bindconfirm="onSearch"
+      />
+      <text class="search-clear" wx:if="{{keyword}}" bindtap="clearSearch">×</text>
+    </view>
+  </view>
+
+  <view class="load-failed-banner" wx:if="{{loadFailed}}" bindtap="retryLoad">
+    <view class="load-failed-text">站点数据获取失败，展示的可能是过期或空数据</view>
+    <view class="load-failed-retry">点击重试</view>
+  </view>
+
+  <view class="tab-bar active-{{activeTab}}">
+    <view class="tab-slider">
+      <view class="tab-slider-line"></view>
+    </view>
+    <view class="tab-item {{activeTab === 'reservoir' ? 'active' : ''}}" bindtap="switchTab" data-type="reservoir">
+      <text class="tab-text">水库</text>
+      <text class="tab-count num">{{reservoirList.length}}</text>
+    </view>
+    <view class="tab-item {{activeTab === 'river' ? 'active' : ''}}" bindtap="switchTab" data-type="river">
+      <text class="tab-text">河道</text>
+      <text class="tab-count num">{{riverList.length}}</text>
+    </view>
+    <view class="tab-item {{activeTab === 'soil' ? 'active' : ''}}" bindtap="switchTab" data-type="soil">
+      <text class="tab-text">土壤墒情</text>
+      <text class="tab-count num">{{soilList.length}}</text>
+    </view>
+  </view>
+
+  <view class="station-list stagger">
+    <view class="station-item" wx:for="{{filteredList}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}">
+      <view class="item-accent {{item.type}}"></view>
+      <view class="item-icon {{item.type}}">
+        <view class="ic ic-droplet-d" wx:if="{{item.type === 'reservoir'}}"></view>
+        <view class="ic ic-wave-d" wx:elif="{{item.type === 'river'}}"></view>
+        <view class="ic ic-sprout-d" wx:else></view>
+      </view>
+      <view class="item-content">
+        <view class="item-header">
+          <view class="item-name">{{item.name}}</view>
+          <view class="item-status {{item.status}}">{{item.statusText}}</view>
+        </view>
+        <view class="item-address">{{item.address}}</view>
+        <view class="item-data">
+          <view class="data-col" wx:if="{{item.type === 'reservoir'}}">
+            <text class="data-value num">{{item.currentLevel ? item.currentLevel + 'm' : '--'}}</text>
+            <text class="data-label">库水位（海拔）</text>
+          </view>
+          <view class="data-col" wx:if="{{item.type === 'reservoir' && item.currentVolume}}">
+            <text class="data-value num">{{item.currentVolume}}万m³</text>
+            <text class="data-label">库容</text>
+          </view>
+          <view class="data-col" wx:if="{{item.type === 'river'}}">
+            <text class="data-value num">{{item.waterLevel ? item.waterLevel + 'm' : '--'}}</text>
+            <text class="data-label">水位（海拔）</text>
+          </view>
+          <view class="data-col" wx:if="{{item.type === 'river' && item.flow}}">
+            <text class="data-value num">{{item.flow}}m³/s</text>
+            <text class="data-label">流量</text>
+          </view>
+          <view class="data-col" wx:if="{{item.type === 'soil'}}">
+            <text class="data-value num">{{item.moisture ? item.moisture + '%' : '--'}}</text>
+            <text class="data-label">湿度</text>
+          </view>
+          <view class="data-col" wx:if="{{item.type === 'soil' && item.temperature}}">
+            <text class="data-value num">{{item.temperature}}°C</text>
+            <text class="data-label">地温</text>
+          </view>
+        </view>
+      </view>
+      <view class="item-arrow">›</view>
+    </view>
+
+    <view class="empty-state" wx:if="{{filteredList.length === 0}}">
+      <view class="empty-icon ic ic-inbox-g"></view>
+      <view class="empty-text">暂无站点数据</view>
+      <view class="empty-hint">可切换分类或调整搜索关键词</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "name": "getWeather",
+  "version": "1.0.0",
+  "description": "天气API代理云函数，支持彩云天气和和风天气",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest",
+    "node-fetch": "^2.6.7"
+  }
+}

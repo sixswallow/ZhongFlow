@@ -1,0 +1,19 @@
+<view class="tab-bar">
+  <view class="tab-bar-plate">
+    <view class="tab-pill" style="transform: translateX({{selected * 100}}%);">
+      <view class="tab-pill-line"></view>
+    </view>
+    <view
+      class="tab-bar-item {{selected === index ? 'active' : ''}}"
+      wx:for="{{list}}"
+      wx:key="index"
+      data-index="{{index}}"
+      bindtap="switchTab"
+    >
+      <view class="tab-icon-wrap">
+        <view class="tab-icon ic {{selected === index ? item.iconActive : item.icon}}"></view>
+      </view>
+      <view class="tab-text">{{item.text}}</view>
+    </view>
+  </view>
+</view>

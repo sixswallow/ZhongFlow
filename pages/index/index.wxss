@@ -1,0 +1,126 @@
+@import "../../assets/icons.wxss";
+
+.page{min-height:100vh;background:#f4f8fc;color:#123a4a}
+
+/* ============================================================
+   Hero：深青黛基底 + 极光漂移 + 水形涟漪
+   ============================================================ */
+.hero{position:relative;overflow:hidden;min-height:564rpx;padding-bottom:52rpx;color:#fff;background:#0e4d64}
+.hero-surface{position:absolute;top:0;right:0;bottom:0;left:0;background:radial-gradient(circle at 88% 8%,rgba(94,212,235,.5),transparent 30%),radial-gradient(circle at 8% 105%,rgba(14,155,184,.3),transparent 40%),linear-gradient(150deg,#0e4d64 0%,#0b4f8a 48%,#2e86b8 100%)}
+
+/* 极光层：缓慢呼吸漂移，营造高级光感 */
+.hero-aurora{position:absolute;border-radius:50%;pointer-events:none}
+.aurora-a{top:-140rpx;right:-110rpx;width:520rpx;height:520rpx;background:radial-gradient(circle,rgba(94,212,235,.46) 0%,rgba(94,212,235,0) 68%);animation:qd-aurora 20s ease-in-out infinite}
+.aurora-b{bottom:-190rpx;left:-130rpx;width:560rpx;height:560rpx;background:radial-gradient(circle,rgba(46,134,184,.42) 0%,rgba(46,134,184,0) 70%);animation:qd-aurora 26s ease-in-out infinite reverse}
+
+/* 水形涟漪：细描边同心环，轻轻浮动 */
+.hero-ripple{position:absolute;border:2rpx solid rgba(255,255,255,.16);pointer-events:none}
+.ripple-a{right:-90rpx;bottom:-120rpx;width:330rpx;height:330rpx;border-radius:46% 54% 60% 40%;animation:qd-float 9s ease-in-out infinite}
+.ripple-b{right:40rpx;bottom:-80rpx;width:200rpx;height:200rpx;border-radius:54% 46% 44% 56%;animation:qd-float 11s ease-in-out infinite reverse}
+
+.status-bar,.hero-content{position:relative;z-index:2}
+.hero-content{padding:18rpx 28rpx 0}
+
+/* 地区选择胶囊 */
+.location-picker{display:inline-flex;align-items:center;padding:16rpx 20rpx 16rpx 14rpx;border:1rpx solid rgba(255,255,255,.4);border-radius:999rpx;background:rgba(255,255,255,.16);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.34),0 6rpx 18rpx rgba(6,38,54,.16);backdrop-filter:blur(16rpx) saturate(1.3);transition:transform var(--qd-t-fast) var(--qd-ease-spring),background var(--qd-t-fast) ease}
+.location-picker:active{transform:scale(.96);background:rgba(255,255,255,.24)}
+.location-mark{width:28rpx;height:28rpx;margin-right:9rpx}
+.location-text{font-size:27rpx;font-weight:600;letter-spacing:.5rpx}
+.location-arrow{margin-left:12rpx;opacity:.82;font-size:24rpx}
+
+/* 标题区：字阶对比拉开层级 */
+.hero-headline{margin-top:52rpx}
+.hero-title{margin-top:14rpx;font-size:62rpx;font-weight:700;letter-spacing:4rpx;line-height:1.12;text-shadow:0 4rpx 20rpx rgba(6,38,54,.24)}
+.hero-subtitle{margin-top:14rpx;color:rgba(255,255,255,.84);font-size:25rpx;letter-spacing:.5rpx}
+
+/* ============================================================
+   天气玻璃条
+   ============================================================ */
+.weather-strip{display:flex;align-items:center;justify-content:space-between;min-height:112rpx;margin-top:38rpx;padding:18rpx 22rpx;border:1rpx solid rgba(255,255,255,.4);border-radius:26rpx;background:rgba(255,255,255,.18);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.38),0 14rpx 34rpx rgba(6,38,54,.2);backdrop-filter:blur(22rpx) saturate(1.4);transition:transform var(--qd-t-fast) var(--qd-ease-spring),background var(--qd-t-fast) ease}
+.weather-strip:active{transform:scale(.985);background:rgba(255,255,255,.24)}
+.weather-main{display:flex;align-items:center}
+.weather-temp{margin-right:20rpx;font-size:58rpx;font-weight:300;letter-spacing:-1.5rpx;line-height:1}
+.weather-text{font-size:28rpx;font-weight:600;letter-spacing:.5rpx}
+.weather-meta{margin-top:6rpx;color:rgba(255,255,255,.8);font-size:22rpx}
+.weather-action{display:flex;align-items:center}
+.weather-more{font-size:22rpx;color:rgba(255,255,255,.94)}
+.weather-chevron{margin-left:6rpx;font-size:28rpx;color:rgba(255,255,255,.9);transition:transform var(--qd-t-fast) var(--qd-ease-spring)}
+.weather-strip:active .weather-chevron{transform:translateX(6rpx)}
+.weather-unavailable{background:rgba(143,97,14,.28);border-color:rgba(255,236,200,.44)}
+.weather-loading{justify-content:flex-start}
+.weather-loading:active{transform:none;background:rgba(255,255,255,.18)}
+.weather-sk-temp{width:96rpx;height:58rpx;margin-right:20rpx;background:rgba(255,255,255,.24)}
+.weather-sk-line{width:210rpx;height:22rpx;background:rgba(255,255,255,.22)}
+.weather-sk-line.short{width:140rpx;margin-top:12rpx}
+
+/* ============================================================
+   内容区（不得以负外边距覆盖天气区域）
+   ============================================================ */
+.content{position:relative;margin-top:0;padding:0 24rpx calc(156rpx + env(safe-area-inset-bottom))}
+
+.overview-card,.recent-card,.empty-card{border:1rpx solid rgba(215,232,240,.92);border-radius:28rpx;background:linear-gradient(180deg,#ffffff 0%,#fdfeff 100%);box-shadow:var(--qd-e2),var(--qd-hairline-top)}
+
+/* ---------- 数据概览 ---------- */
+.overview-card{margin-top:28rpx;padding:34rpx 32rpx 28rpx}
+.overview-top{display:flex;align-items:flex-start;justify-content:space-between}
+.section-kicker{color:#5e7f90;font-size:22rpx;font-weight:700;letter-spacing:3rpx}
+.overview-metric{margin-top:28rpx}
+.overview-value-row{display:flex;align-items:baseline}
+.overview-count{color:#0e4d64;font-size:72rpx;font-weight:700;line-height:1;letter-spacing:-2rpx;text-shadow:0 6rpx 18rpx rgba(14,77,100,.12)}
+.overview-unit{margin-left:10rpx;color:#5e7f90;font-size:26rpx;font-weight:600}
+.overview-metric-label{margin-top:12rpx;color:#5e7f90;font-size:24rpx;font-weight:500;letter-spacing:.5rpx}
+.overview-foot{display:flex;align-items:center;justify-content:space-between;margin-top:24rpx;padding-top:20rpx;border-top:1rpx solid #eaf1f6}
+.overview-foot-label{color:#8aa5b4;font-size:22rpx}
+.overview-foot-value{color:#26475f;font-size:22rpx;font-weight:600}
+
+/* ---------- 地图门户 ---------- */
+.map-portal{position:relative;display:flex;align-items:center;justify-content:space-between;min-height:196rpx;margin-top:26rpx;overflow:hidden;padding:34rpx;border-radius:28rpx;color:#fff;background:linear-gradient(135deg,#0e4d64 0%,#0b4f8a 58%,#2e86b8 100%);box-shadow:var(--qd-e-brand),inset 0 1rpx 0 rgba(255,255,255,.24);transition:transform var(--qd-t-base) var(--qd-ease-spring),box-shadow var(--qd-t-base) var(--qd-ease)}
+.map-portal:active{transform:scale(.982);box-shadow:0 8rpx 20rpx rgba(14,77,100,.2),inset 0 1rpx 0 rgba(255,255,255,.24)}
+.map-portal-glow{position:absolute;top:-120rpx;right:-60rpx;width:380rpx;height:380rpx;background:radial-gradient(circle,rgba(94,212,235,.4) 0%,rgba(94,212,235,0) 70%);animation:qd-aurora 18s ease-in-out infinite}
+.map-portal-pattern{position:absolute;right:-75rpx;top:-95rpx;width:275rpx;height:275rpx;border:2rpx solid rgba(255,255,255,.26);border-radius:46% 54% 60% 40%;transform:rotate(18deg);animation:qd-float 10s ease-in-out infinite}
+.map-portal-pattern::after{position:absolute;right:34rpx;top:40rpx;width:150rpx;height:150rpx;border:2rpx solid rgba(255,255,255,.16);border-radius:52% 48% 56% 44%;content:''}
+.map-portal-copy,.map-portal-arrow{position:relative;z-index:1}
+.map-portal-eyebrow{color:rgba(255,255,255,.74);font-size:22rpx;font-weight:600;letter-spacing:3rpx}
+.map-portal-title{margin-top:10rpx;font-size:42rpx;font-weight:700;letter-spacing:2rpx}
+.map-portal-desc{margin-top:12rpx;color:rgba(255,255,255,.9);font-size:22rpx}
+.map-portal-arrow{display:flex;align-items:center;justify-content:center;width:68rpx;height:68rpx;border:1rpx solid rgba(255,255,255,.56);border-radius:50%;background:rgba(255,255,255,.18);box-shadow:inset 0 1rpx 0 rgba(255,255,255,.36);font-size:34rpx;transition:transform var(--qd-t-base) var(--qd-ease-spring)}
+.map-portal:active .map-portal-arrow{transform:translateX(8rpx) scale(1.06)}
+
+/* ---------- 最新数据 ---------- */
+.data-section{margin-top:46rpx}
+.section-header{display:flex;align-items:flex-end;justify-content:space-between;margin:0 4rpx 20rpx}
+.section-title{margin-top:7rpx;color:#123a4a;font-size:36rpx;font-weight:700;letter-spacing:.5rpx}
+.refresh-link{padding:22rpx 16rpx;color:#0e6a80;font-size:23rpx;font-weight:600;transition:opacity var(--qd-t-fast) ease}
+.refresh-link:active{opacity:.55}
+.recent-card{padding:0 28rpx}
+.recent-item{position:relative;display:flex;align-items:center;padding:26rpx 0;border-bottom:1rpx solid #eaf1f6;transition:background var(--qd-t-fast) ease,transform var(--qd-t-fast) var(--qd-ease-spring)}
+.recent-item:active{background:#f4fafd;transform:scale(.994)}
+.recent-item:last-child{border-bottom:0}
+.recent-icon{display:flex;align-items:center;justify-content:center;width:108rpx;height:62rpx;margin-right:18rpx;border:1rpx solid transparent;border-radius:18rpx;font-size:22rpx;font-weight:700;letter-spacing:.5rpx}
+.recent-icon.reservoir{color:#0e6a80;background:#e6f7fc;border-color:rgba(14,155,184,.14)}
+.recent-icon.river{color:#0a7d86;background:#e6fbfb;border-color:rgba(18,165,172,.16)}
+.recent-icon.soil{color:#4f7a14;background:#f3f9e6;border-color:rgba(95,158,58,.16)}
+.recent-info{min-width:0;flex:1}
+.recent-name{overflow:hidden;color:#26475f;font-size:28rpx;font-weight:600;text-overflow:ellipsis;white-space:nowrap}
+.recent-time{margin-top:8rpx;color:#8aa5b4;font-size:22rpx}
+.recent-value{text-align:right}
+.value-text{color:#0e4d64;font-size:32rpx;font-weight:700;letter-spacing:-.5rpx}
+.value-label{margin-top:6rpx;color:#8aa5b4;font-size:22rpx}
+.recent-arrow{margin-left:14rpx;color:#8fc7d8;font-size:32rpx;transition:transform var(--qd-t-fast) var(--qd-ease-spring)}
+.recent-item:active .recent-arrow{transform:translateX(6rpx)}
+
+/* ---------- 空态 ---------- */
+.empty-card{padding:52rpx 24rpx;text-align:center}
+.empty-mark{width:72rpx;height:72rpx;margin:0 auto 18rpx;opacity:.5}
+.empty-title{color:#5e7f90;font-size:26rpx;font-weight:600}
+.empty-desc{margin-top:10rpx;color:#8aa5b4;font-size:22rpx}
+
+/* ===== 结构钩子与文本列 ===== */
+.location{display:inline-block}
+.weather-copy{min-width:0;flex:1}
+
+/* ===== 触控命中区补强（≥88rpx≈44pt） ===== */
+.location-picker{position:relative}
+.location-picker::after{position:absolute;top:-12rpx;right:0;bottom:-12rpx;left:0;content:''}
+.refresh-link{position:relative}
+.refresh-link::after{position:absolute;top:-8rpx;right:-8rpx;bottom:-8rpx;left:-8rpx;content:''}

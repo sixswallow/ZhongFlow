@@ -1,0 +1,11 @@
+# 本地临时脚本与备份（历史排查产物，不入库）
+.ekko-tmp/
+# 微信开发者工具本地私有配置
+project.private.config.json
+# 日志与系统文件
+*.log
+.DS_Store
+Thumbs.db
+
+# AI 协作日志（本地保留，不入库）
+.workbuddy/

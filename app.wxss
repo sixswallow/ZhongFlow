@@ -1,0 +1,346 @@
+/* ============================================================
+   青黛设计系统 v4 · 静水（Still Water）
+   分层光影 + 玻璃拟态 + 精致字阶 + 渐进动效
+   - 纯视觉层：仅样式与动效 token，不承载任何业务数据语义
+   ============================================================ */
+
+page {
+  /* ---------- 色彩 ---------- */
+  --qd-bg: #f4f8fc;            /* 雾白青背景 */
+  --qd-bg-2: #e9f2f9;          /* 背景渐变深端 */
+  --qd-brand: #0e4d64;         /* 品牌深青黛 */
+  --qd-brand-2: #0b4f8a;       /* 品牌过渡蓝（渐变中段） */
+  --qd-accent: #0e9bb8;        /* 强调青 */
+  --qd-accent-2: #5ed4eb;      /* 高光青 */
+  --qd-ink: #123a4a;           /* 主文本墨青 */
+  --qd-ink-2: #26475f;         /* 次强文本 */
+  --qd-sub: #5e7f90;           /* 次级文本 */
+  --qd-muted: #8aa5b4;         /* 弱化文本 */
+  --qd-faint: #a9bfcb;         /* 最弱文本 */
+  --qd-line: #d7e8f0;          /* 边框 */
+  --qd-line-soft: #e8f1f7;     /* 内部分隔 */
+  --qd-card: #ffffff;
+  --qd-glass: rgba(255, 255, 255, 0.72);
+  --qd-glass-strong: rgba(255, 255, 255, 0.92);
+
+  /* ---------- 分层光影（接触层 / 中层 / 环境层） ---------- */
+  --qd-e1: 0 1rpx 2rpx rgba(14, 77, 100, 0.05), 0 6rpx 16rpx rgba(14, 77, 100, 0.06);
+  --qd-e2: 0 1rpx 2rpx rgba(14, 77, 100, 0.05), 0 10rpx 24rpx rgba(14, 77, 100, 0.08), 0 26rpx 52rpx rgba(14, 77, 100, 0.05);
+  --qd-e3: 0 2rpx 4rpx rgba(14, 77, 100, 0.06), 0 18rpx 40rpx rgba(14, 77, 100, 0.14), 0 44rpx 84rpx rgba(14, 77, 100, 0.08);
+  --qd-e-brand: 0 10rpx 24rpx rgba(14, 77, 100, 0.22), 0 24rpx 52rpx rgba(14, 77, 100, 0.16);
+  --qd-hairline-top: inset 0 1rpx 0 rgba(255, 255, 255, 0.92);   /* 顶部内高光 */
+  --qd-hairline-glass: inset 0 1rpx 0 rgba(255, 255, 255, 0.34);
+  --qd-shadow: rgba(14, 77, 100, 0.08);
+  --qd-shadow-lg: rgba(14, 77, 100, 0.14);
+
+  /* ---------- 圆角 ---------- */
+  --qd-r-xs: 12rpx;
+  --qd-r-sm: 18rpx;
+  --qd-r: 24rpx;
+  --qd-r-lg: 28rpx;
+  --qd-r-xl: 36rpx;
+  --qd-r-pill: 999rpx;
+
+  /* ---------- 动效 ---------- */
+  --qd-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --qd-ease-out: cubic-bezier(0.16, 1, 0.3, 1);      /* 平滑减速：入场 */
+  --qd-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1); /* 回弹：按压/弹入 */
+  --qd-t-fast: 0.18s;
+  --qd-t-base: 0.32s;
+  --qd-t-slow: 0.56s;
+
+  background-color: #f4f8fc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 28rpx;
+  color: #123a4a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   字阶：数值一律等宽对齐，弱化项与强调项拉开对比
+   ============================================================ */
+.num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+}
+
+.kicker {
+  color: #5e7f90;
+  font-size:22rpx;
+  font-weight: 700;
+  letter-spacing: 3rpx;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   布局基类
+   ============================================================ */
+.container {
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #8aa5b4;
+  font-size: 24rpx;
+}
+
+.text-primary {
+  color: #0e4d64;
+}
+
+.text-success {
+  color: #1f9d8a;
+}
+
+.text-warning {
+  color: #d49a2a;
+}
+
+.text-danger {
+  color: #d95f5f;
+}
+
+.mt-16 { margin-top: 16rpx; }
+.mt-24 { margin-top: 24rpx; }
+.mb-16 { margin-bottom: 16rpx; }
+.mb-24 { margin-bottom: 24rpx; }
+.p-24 { padding: 24rpx; }
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   卡片：分层光影 + 顶部内高光 + 微渐变，取代扁平白块
+   ============================================================ */
+.card {
+  position: relative;
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+  border: 1rpx solid rgba(215, 232, 240, 0.9);
+  border-radius: 24rpx;
+  background: linear-gradient(180deg, #ffffff 0%, #fdfeff 100%);
+  box-shadow: var(--qd-e2), var(--qd-hairline-top);
+  box-sizing: border-box;
+  transition: transform var(--qd-t-fast) var(--qd-ease-spring),
+              box-shadow var(--qd-t-fast) var(--qd-ease);
+}
+
+
+.card-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22rpx;
+  color: #123a4a;
+  font-size: 32rpx;
+  font-weight: 700;
+  letter-spacing: 0.5rpx;
+}
+
+.card-title::before {
+  content: '';
+  display: inline-block;
+  width: 6rpx;
+  height: 28rpx;
+  margin-right: 12rpx;
+  border-radius: 3rpx;
+  background: linear-gradient(180deg, #0e9bb8 0%, #0e4d64 100%);
+  box-shadow: 0 0 10rpx rgba(14, 155, 184, 0.4);
+}
+
+/* ============================================================
+   玻璃拟态
+   ============================================================ */
+.glass {
+  border: 1rpx solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 12rpx 32rpx rgba(14, 77, 100, 0.14);
+  backdrop-filter: blur(22rpx) saturate(1.4);
+  -webkit-backdrop-filter: blur(22rpx) saturate(1.4);
+}
+
+.glass-dark {
+  border: 1rpx solid rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: var(--qd-hairline-glass);
+  backdrop-filter: blur(20rpx) saturate(1.3);
+  -webkit-backdrop-filter: blur(20rpx) saturate(1.3);
+}
+
+/* ============================================================
+   骨架屏
+   ============================================================ */
+.sk {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #eef4f9 0%, #e7eff6 100%);
+  border-radius: 14rpx;
+}
+
+.sk::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.82) 50%, rgba(255, 255, 255, 0) 100%);
+  animation: qd-shimmer 1.5s var(--qd-ease) infinite;
+  content: '';
+}
+
+/* ============================================================
+   动效关键帧
+   ============================================================ */
+@keyframes qd-fade-up {
+  from { opacity: 0; transform: translate3d(0, 26rpx, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes qd-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes qd-pop {
+  0% { opacity: 0; transform: scale(0.93); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes qd-slide-left {
+  from { opacity: 0; transform: translate3d(-22rpx, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes qd-slide-up-panel {
+  from { opacity: 0; transform: translate3d(0, 60rpx, 0) scale(0.98); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@keyframes qd-shimmer {
+  from { transform: translate3d(-100%, 0, 0); }
+  to { transform: translate3d(100%, 0, 0); }
+}
+
+@keyframes qd-breathe {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 5rpx rgba(14, 155, 184, 0.14); }
+  50% { opacity: 0.5; box-shadow: 0 0 0 11rpx rgba(14, 155, 184, 0.05); }
+}
+
+@keyframes qd-aurora {
+  0% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.9; }
+  50% { transform: translate3d(-4%, 3%, 0) scale(1.08); opacity: 1; }
+  100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.9; }
+}
+
+@keyframes qd-float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -10rpx, 0); }
+}
+
+@keyframes qd-sheen {
+  from { transform: translate3d(-140%, 0, 0) rotate(14deg); }
+  to { transform: translate3d(240%, 0, 0) rotate(14deg); }
+}
+
+@keyframes qd-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes qd-bar-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* ---------- 入场动效工具类 ---------- */
+.anim-up { animation: qd-fade-up var(--qd-t-slow) var(--qd-ease-out) both; }
+.anim-pop { animation: qd-pop var(--qd-t-slow) var(--qd-ease-spring) both; }
+.anim-fade { animation: qd-fade-in 0.6s var(--qd-ease-out) both; }
+.anim-left { animation: qd-slide-left var(--qd-t-slow) var(--qd-ease-out) both; }
+
+/* 逐项延迟（配合 .anim-up / .anim-pop 使用） */
+.d1 { animation-delay: 0.05s; }
+.d2 { animation-delay: 0.1s; }
+.d3 { animation-delay: 0.16s; }
+.d4 { animation-delay: 0.22s; }
+.d5 { animation-delay: 0.28s; }
+.d6 { animation-delay: 0.34s; }
+.d7 { animation-delay: 0.4s; }
+.d8 { animation-delay: 0.46s; }
+
+/* 列表逐项渐显：交给容器，最多 12 项错峰 */
+.stagger > view {
+  animation: qd-fade-up 0.5s var(--qd-ease-out) both;
+}
+.stagger > view:nth-child(1) { animation-delay: 0.03s; }
+.stagger > view:nth-child(2) { animation-delay: 0.07s; }
+.stagger > view:nth-child(3) { animation-delay: 0.11s; }
+.stagger > view:nth-child(4) { animation-delay: 0.15s; }
+.stagger > view:nth-child(5) { animation-delay: 0.19s; }
+.stagger > view:nth-child(6) { animation-delay: 0.23s; }
+.stagger > view:nth-child(7) { animation-delay: 0.27s; }
+.stagger > view:nth-child(8) { animation-delay: 0.31s; }
+.stagger > view:nth-child(9) { animation-delay: 0.35s; }
+.stagger > view:nth-child(10) { animation-delay: 0.39s; }
+.stagger > view:nth-child(11) { animation-delay: 0.43s; }
+.stagger > view:nth-child(12) { animation-delay: 0.47s; }
+
+/* 呼吸点：设计系统状态指示器，供各页面状态胶囊复用 */
+.live-dot {
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #0e9bb8;
+  animation: qd-breathe 2.4s var(--qd-ease) infinite;
+}
+
+/* 主按钮：渐变 + 顶部内高光 + 光带掠过 */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  padding: 20rpx 34rpx;
+  border-radius: var(--qd-r-sm);
+  color: #fff;
+  font-size: 25rpx;
+  font-weight: 600;
+  letter-spacing: 1rpx;
+  background: linear-gradient(135deg, #0e4d64 0%, #0b4f8a 100%);
+  box-shadow: var(--qd-e-brand), var(--qd-hairline-glass);
+  transition: transform var(--qd-t-fast) var(--qd-ease-spring);
+}
+
+.btn-primary::after {
+  position: absolute;
+  top: -40%;
+  bottom: -40%;
+  left: 0;
+  width: 34%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0));
+  animation: qd-sheen 3.6s var(--qd-ease) infinite;
+  content: '';
+}
+
+.btn-primary:active {
+  transform: scale(0.96);
+}

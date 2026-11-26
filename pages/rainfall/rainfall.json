@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "天气与降水",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light"
+}

@@ -1,0 +1,2399 @@
+{
+  "current": {
+    "metadata": {
+      "tag": "0e9b4003bb1cdff8495f8817fdd6828d4a1a72e06381a14781429a0145af1b85",
+      "attributions": [
+        "https://developer.qweather.com/attribution.html"
+      ]
+    },
+    "condition": {
+      "text": "晴",
+      "code": "100"
+    },
+    "temperature": {
+      "value": 25.6,
+      "unit": "°C"
+    },
+    "feelsLike": {
+      "value": 27.35,
+      "unit": "°C"
+    },
+    "humidity": 0.74,
+    "wind": {
+      "direction": {
+        "degree": 289,
+        "compass": "wnw"
+      },
+      "speed": {
+        "value": 2.17,
+        "unit": "m/s"
+      },
+      "scale": 2
+    },
+    "windGust": {
+      "value": 5.15,
+      "unit": "m/s"
+    },
+    "precipitation": {
+      "amount": {
+        "value": 0,
+        "unit": "mm"
+      },
+      "intensity": {
+        "value": 0,
+        "unit": "mm/h"
+      },
+      "type": "none"
+    },
+    "pressure": {
+      "value": 1011.37,
+      "unit": "hPa"
+    },
+    "visibility": {
+      "value": 26800,
+      "unit": "m"
+    },
+    "dewPoint": {
+      "value": 20.57,
+      "unit": "°C"
+    },
+    "cloudCover": 0.02,
+    "uvIndex": 0
+  },
+  "hourly": {
+    "metadata": {
+      "tag": "e7fa74c2c9c89cfb34cea0686eca1a5cdf945d200fcf97ff25a5f0ead6689b07",
+      "attributions": [
+        "https://developer.qweather.com/attribution.html"
+      ]
+    },
+    "hours": [
+      {
+        "forecastTime": "2026-09-25T16:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 25.03,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 26.25,
+          "unit": "°C"
+        },
+        "humidity": 0.75,
+        "wind": {
+          "direction": {
+            "degree": 306,
+            "compass": "nw"
+          },
+          "speed": {
+            "value": 2.78,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 5.99,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1011.32,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 27435,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.2,
+          "unit": "°C"
+        },
+        "cloudCover": 0.01,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-25T17:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 24.61,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 26.86,
+          "unit": "°C"
+        },
+        "humidity": 0.78,
+        "wind": {
+          "direction": {
+            "degree": 263,
+            "compass": "w"
+          },
+          "speed": {
+            "value": 1.28,
+            "unit": "m/s"
+          },
+          "scale": 1
+        },
+        "windGust": {
+          "value": 4.86,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1010.85,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 21475,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.44,
+          "unit": "°C"
+        },
+        "cloudCover": 0,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-25T18:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 24.07,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 25.65,
+          "unit": "°C"
+        },
+        "humidity": 0.79,
+        "wind": {
+          "direction": {
+            "degree": 193,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.19,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 6.06,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1010.8,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18027,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.27,
+          "unit": "°C"
+        },
+        "cloudCover": 0.03,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-25T19:00Z",
+        "condition": {
+          "text": "少云",
+          "code": "102"
+        },
+        "temperature": {
+          "value": 23.62,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 24.65,
+          "unit": "°C"
+        },
+        "humidity": 0.78,
+        "wind": {
+          "direction": {
+            "degree": 208,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.73,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 6.9,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1010.69,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18135,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 19.66,
+          "unit": "°C"
+        },
+        "cloudCover": 0.07,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-25T20:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 23.96,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 24.83,
+          "unit": "°C"
+        },
+        "humidity": 0.77,
+        "wind": {
+          "direction": {
+            "degree": 211,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 3.03,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 7.53,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1010.82,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 17740,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 19.71,
+          "unit": "°C"
+        },
+        "cloudCover": 0.04,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-25T21:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 23.94,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 24.81,
+          "unit": "°C"
+        },
+        "humidity": 0.77,
+        "wind": {
+          "direction": {
+            "degree": 201,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.96,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 7.47,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1010.75,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 17526,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 19.58,
+          "unit": "°C"
+        },
+        "cloudCover": 0,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-25T22:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 23.16,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 24.15,
+          "unit": "°C"
+        },
+        "humidity": 0.83,
+        "wind": {
+          "direction": {
+            "degree": 211,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.93,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 7.27,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1011.17,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 17527,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.04,
+          "unit": "°C"
+        },
+        "cloudCover": 0,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-25T23:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 23,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 24.27,
+          "unit": "°C"
+        },
+        "humidity": 0.86,
+        "wind": {
+          "direction": {
+            "degree": 211,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.7,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 6.76,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1011.36,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 17527,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.46,
+          "unit": "°C"
+        },
+        "cloudCover": 0.01,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-26T00:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 24.72,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 26.68,
+          "unit": "°C"
+        },
+        "humidity": 0.79,
+        "wind": {
+          "direction": {
+            "degree": 192,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 1.87,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 6.12,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1011.83,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 17527,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.75,
+          "unit": "°C"
+        },
+        "cloudCover": 0,
+        "uvIndex": 1
+      },
+      {
+        "forecastTime": "2026-09-26T01:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 26.63,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 28.06,
+          "unit": "°C"
+        },
+        "humidity": 0.7,
+        "wind": {
+          "direction": {
+            "degree": 195,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.8,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 7.94,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1012.35,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18056,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.76,
+          "unit": "°C"
+        },
+        "cloudCover": 0,
+        "uvIndex": 3
+      },
+      {
+        "forecastTime": "2026-09-26T02:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 28.5,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 30.05,
+          "unit": "°C"
+        },
+        "humidity": 0.65,
+        "wind": {
+          "direction": {
+            "degree": 198,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.92,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 8.36,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1012.21,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18207,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 21.17,
+          "unit": "°C"
+        },
+        "cloudCover": 0,
+        "uvIndex": 5
+      },
+      {
+        "forecastTime": "2026-09-26T03:00Z",
+        "condition": {
+          "text": "晴间多云",
+          "code": "103"
+        },
+        "temperature": {
+          "value": 29.68,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 31.36,
+          "unit": "°C"
+        },
+        "humidity": 0.61,
+        "wind": {
+          "direction": {
+            "degree": 202,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.9,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 8.69,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1011.39,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18789,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 21.42,
+          "unit": "°C"
+        },
+        "cloudCover": 0.26,
+        "uvIndex": 7
+      },
+      {
+        "forecastTime": "2026-09-26T04:00Z",
+        "condition": {
+          "text": "少云",
+          "code": "102"
+        },
+        "temperature": {
+          "value": 31.43,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 33.2,
+          "unit": "°C"
+        },
+        "humidity": 0.55,
+        "wind": {
+          "direction": {
+            "degree": 196,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.81,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 8.56,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1010.4,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 17639,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 21.29,
+          "unit": "°C"
+        },
+        "cloudCover": 0.22,
+        "uvIndex": 8
+      },
+      {
+        "forecastTime": "2026-09-26T05:00Z",
+        "condition": {
+          "text": "晴间多云",
+          "code": "103"
+        },
+        "temperature": {
+          "value": 32.13,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 34.08,
+          "unit": "°C"
+        },
+        "humidity": 0.52,
+        "wind": {
+          "direction": {
+            "degree": 189,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 2.46,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 8.14,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1008.95,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 16250,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 21.03,
+          "unit": "°C"
+        },
+        "cloudCover": 0.31,
+        "uvIndex": 7
+      },
+      {
+        "forecastTime": "2026-09-26T06:00Z",
+        "condition": {
+          "text": "晴间多云",
+          "code": "103"
+        },
+        "temperature": {
+          "value": 32.32,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 34.13,
+          "unit": "°C"
+        },
+        "humidity": 0.51,
+        "wind": {
+          "direction": {
+            "degree": 191,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 2.6,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 8.2,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1007.48,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18554,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.83,
+          "unit": "°C"
+        },
+        "cloudCover": 0.39,
+        "uvIndex": 6
+      },
+      {
+        "forecastTime": "2026-09-26T07:00Z",
+        "condition": {
+          "text": "晴间多云",
+          "code": "103"
+        },
+        "temperature": {
+          "value": 32.35,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 34.12,
+          "unit": "°C"
+        },
+        "humidity": 0.5,
+        "wind": {
+          "direction": {
+            "degree": 187,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 2.59,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 7.74,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1006.52,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 19993,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.72,
+          "unit": "°C"
+        },
+        "cloudCover": 0.45,
+        "uvIndex": 4
+      },
+      {
+        "forecastTime": "2026-09-26T08:00Z",
+        "condition": {
+          "text": "晴间多云",
+          "code": "103"
+        },
+        "temperature": {
+          "value": 32.37,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 34.22,
+          "unit": "°C"
+        },
+        "humidity": 0.51,
+        "wind": {
+          "direction": {
+            "degree": 186,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 2.5,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 7.06,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1005.73,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 19993,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.78,
+          "unit": "°C"
+        },
+        "cloudCover": 0.25,
+        "uvIndex": 2
+      },
+      {
+        "forecastTime": "2026-09-26T09:00Z",
+        "condition": {
+          "text": "晴",
+          "code": "100"
+        },
+        "temperature": {
+          "value": 32.22,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 34.11,
+          "unit": "°C"
+        },
+        "humidity": 0.51,
+        "wind": {
+          "direction": {
+            "degree": 184,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 2.42,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 5.98,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1005.73,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 19344,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.74,
+          "unit": "°C"
+        },
+        "cloudCover": 0.05,
+        "uvIndex": 1
+      },
+      {
+        "forecastTime": "2026-09-26T10:00Z",
+        "condition": {
+          "text": "少云",
+          "code": "102"
+        },
+        "temperature": {
+          "value": 31.66,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 33.45,
+          "unit": "°C"
+        },
+        "humidity": 0.51,
+        "wind": {
+          "direction": {
+            "degree": 189,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 2.3,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 5.05,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1006.19,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18875,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.2,
+          "unit": "°C"
+        },
+        "cloudCover": 0.14,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-26T11:00Z",
+        "condition": {
+          "text": "少云",
+          "code": "102"
+        },
+        "temperature": {
+          "value": 29.38,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 31.42,
+          "unit": "°C"
+        },
+        "humidity": 0.57,
+        "wind": {
+          "direction": {
+            "degree": 206,
+            "compass": "ssw"
+          },
+          "speed": {
+            "value": 1.65,
+            "unit": "m/s"
+          },
+          "scale": 2
+        },
+        "windGust": {
+          "value": 4.51,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1006.78,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18866,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 19.92,
+          "unit": "°C"
+        },
+        "cloudCover": 0.08,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-26T12:00Z",
+        "condition": {
+          "text": "少云",
+          "code": "102"
+        },
+        "temperature": {
+          "value": 29,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 31.81,
+          "unit": "°C"
+        },
+        "humidity": 0.59,
+        "wind": {
+          "direction": {
+            "degree": 183,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 0.6,
+            "unit": "m/s"
+          },
+          "scale": 1
+        },
+        "windGust": {
+          "value": 3.24,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1007.59,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18789,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.28,
+          "unit": "°C"
+        },
+        "cloudCover": 0.09,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-26T13:00Z",
+        "condition": {
+          "text": "晴间多云",
+          "code": "103"
+        },
+        "temperature": {
+          "value": 27.12,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 29.78,
+          "unit": "°C"
+        },
+        "humidity": 0.68,
+        "wind": {
+          "direction": {
+            "degree": 154,
+            "compass": "sse"
+          },
+          "speed": {
+            "value": 0.89,
+            "unit": "m/s"
+          },
+          "scale": 1
+        },
+        "windGust": {
+          "value": 3.39,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1008.48,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18153,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.63,
+          "unit": "°C"
+        },
+        "cloudCover": 0.29,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-26T14:00Z",
+        "condition": {
+          "text": "少云",
+          "code": "102"
+        },
+        "temperature": {
+          "value": 26.31,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 29.08,
+          "unit": "°C"
+        },
+        "humidity": 0.71,
+        "wind": {
+          "direction": {
+            "degree": 173,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 0.65,
+            "unit": "m/s"
+          },
+          "scale": 1
+        },
+        "windGust": {
+          "value": 3.15,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1009.11,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18152,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.63,
+          "unit": "°C"
+        },
+        "cloudCover": 0.21,
+        "uvIndex": 0
+      },
+      {
+        "forecastTime": "2026-09-26T15:00Z",
+        "condition": {
+          "text": "少云",
+          "code": "102"
+        },
+        "temperature": {
+          "value": 24.82,
+          "unit": "°C"
+        },
+        "feelsLike": {
+          "value": 26.98,
+          "unit": "°C"
+        },
+        "humidity": 0.78,
+        "wind": {
+          "direction": {
+            "degree": 179,
+            "compass": "s"
+          },
+          "speed": {
+            "value": 1.49,
+            "unit": "m/s"
+          },
+          "scale": 1
+        },
+        "windGust": {
+          "value": 4.19,
+          "unit": "m/s"
+        },
+        "precipitation": {
+          "amount": {
+            "value": 0,
+            "unit": "mm"
+          },
+          "intensity": {
+            "value": 0,
+            "unit": "mm/h"
+          },
+          "type": "none",
+          "probability": 0
+        },
+        "pressure": {
+          "value": 1009.02,
+          "unit": "hPa"
+        },
+        "visibility": {
+          "value": 18155,
+          "unit": "m"
+        },
+        "dewPoint": {
+          "value": 20.61,
+          "unit": "°C"
+        },
+        "cloudCover": 0.11,
+        "uvIndex": 0
+      }
+    ]
+  },
+  "daily": {
+    "metadata": {
+      "tag": "e7fa74c2c9c89cfb34cea0686eca1a5cdf945d200fcf97ff25a5f0ead6689b07",
+      "attributions": [
+        "https://developer.qweather.com/attribution.html"
+      ]
+    },
+    "days": [
+      {
+        "forecastStartTime": "2026-09-24T16:00Z",
+        "forecastEndTime": "2026-09-25T16:00Z",
+        "astro": {
+          "sunrise": "2026-09-24T22:30Z",
+          "sunset": "2026-09-25T10:35Z",
+          "astronomicalDawn": "2026-09-24T21:12Z",
+          "nauticalDawn": "2026-09-24T21:39Z",
+          "civilDawn": "2026-09-24T22:07Z",
+          "astronomicalDusk": "2026-09-25T11:52Z",
+          "nauticalDusk": "2026-09-25T11:25Z",
+          "civilDusk": "2026-09-25T10:58Z",
+          "solarNoon": "2026-09-25T04:32Z",
+          "solarMidnight": "2026-09-24T16:32Z",
+          "moonrise": "2026-09-25T09:34Z",
+          "moonset": "2026-09-24T20:50Z",
+          "moonTransit": "2026-09-25T15:39Z",
+          "moonUnderfoot": "2026-09-26T03:39Z",
+          "moonPhase": "waxing-gibbous"
+        },
+        "temperatureMax": {
+          "value": 31.5,
+          "unit": "°C"
+        },
+        "temperatureMin": {
+          "value": 25.13,
+          "unit": "°C"
+        },
+        "temperatureAvg": {
+          "value": 26.57,
+          "unit": "°C"
+        },
+        "uvIndexMax": 4,
+        "daytime": {
+          "forecastStartTime": "2026-09-24T23:00Z",
+          "forecastEndTime": "2026-09-25T11:00Z",
+          "condition": {
+            "text": "少云",
+            "code": "102"
+          },
+          "temperatureMax": {
+            "value": 31.5,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 28.42,
+            "unit": "°C"
+          },
+          "humidity": 0.55,
+          "wind": {
+            "direction": {
+              "degree": 178,
+              "compass": "s"
+            },
+            "speed": {
+              "value": 2.41,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 7.25,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0,
+            "type": "none"
+          },
+          "cloudCover": 0.17
+        },
+        "nighttime": {
+          "forecastStartTime": "2026-09-25T11:00Z",
+          "forecastEndTime": "2026-09-25T23:00Z",
+          "condition": {
+            "text": "晴",
+            "code": "100"
+          },
+          "temperatureMax": {
+            "value": 26.89,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 23.16,
+            "unit": "°C"
+          },
+          "humidity": 0.75,
+          "wind": {
+            "direction": {
+              "degree": 203,
+              "compass": "ssw"
+            },
+            "speed": {
+              "value": 1.75,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 7.53,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0,
+            "type": "none"
+          },
+          "cloudCover": 0.03
+        }
+      },
+      {
+        "forecastStartTime": "2026-09-25T16:00Z",
+        "forecastEndTime": "2026-09-26T16:00Z",
+        "astro": {
+          "sunrise": "2026-09-25T22:30Z",
+          "sunset": "2026-09-26T10:33Z",
+          "astronomicalDawn": "2026-09-25T21:13Z",
+          "nauticalDawn": "2026-09-25T21:40Z",
+          "civilDawn": "2026-09-25T22:07Z",
+          "astronomicalDusk": "2026-09-26T11:51Z",
+          "nauticalDusk": "2026-09-26T11:24Z",
+          "civilDusk": "2026-09-26T10:57Z",
+          "solarNoon": "2026-09-26T04:32Z",
+          "solarMidnight": "2026-09-25T16:32Z",
+          "moonrise": "2026-09-26T10:04Z",
+          "moonset": "2026-09-25T21:47Z",
+          "moonTransit": "2026-09-26T15:59Z",
+          "moonUnderfoot": "2026-09-27T03:59Z",
+          "moonPhase": "waxing-gibbous"
+        },
+        "temperatureMax": {
+          "value": 32.37,
+          "unit": "°C"
+        },
+        "temperatureMin": {
+          "value": 23,
+          "unit": "°C"
+        },
+        "temperatureAvg": {
+          "value": 27.53,
+          "unit": "°C"
+        },
+        "uvIndexMax": 8,
+        "daytime": {
+          "forecastStartTime": "2026-09-25T23:00Z",
+          "forecastEndTime": "2026-09-26T11:00Z",
+          "condition": {
+            "text": "少云",
+            "code": "102"
+          },
+          "temperatureMax": {
+            "value": 32.37,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 23,
+            "unit": "°C"
+          },
+          "humidity": 0.6,
+          "wind": {
+            "direction": {
+              "degree": 198,
+              "compass": "ssw"
+            },
+            "speed": {
+              "value": 2.55,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 8.69,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0,
+            "type": "none"
+          },
+          "cloudCover": 0.17
+        },
+        "nighttime": {
+          "forecastStartTime": "2026-09-26T11:00Z",
+          "forecastEndTime": "2026-09-26T23:00Z",
+          "condition": {
+            "text": "少云",
+            "code": "102"
+          },
+          "temperatureMax": {
+            "value": 29.38,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 22.24,
+            "unit": "°C"
+          },
+          "humidity": 0.77,
+          "wind": {
+            "direction": {
+              "degree": 143,
+              "compass": "se"
+            },
+            "speed": {
+              "value": 1.41,
+              "unit": "m/s"
+            },
+            "scale": 1
+          },
+          "windGustMax": {
+            "value": 6.81,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0,
+            "type": "none"
+          },
+          "cloudCover": 0.15
+        }
+      },
+      {
+        "forecastStartTime": "2026-09-26T16:00Z",
+        "forecastEndTime": "2026-09-27T16:00Z",
+        "astro": {
+          "sunrise": "2026-09-26T22:31Z",
+          "sunset": "2026-09-27T10:32Z",
+          "astronomicalDawn": "2026-09-26T21:13Z",
+          "nauticalDawn": "2026-09-26T21:40Z",
+          "civilDawn": "2026-09-26T22:07Z",
+          "astronomicalDusk": "2026-09-27T11:50Z",
+          "nauticalDusk": "2026-09-27T11:23Z",
+          "civilDusk": "2026-09-27T10:56Z",
+          "solarNoon": "2026-09-27T04:32Z",
+          "solarMidnight": "2026-09-26T16:32Z",
+          "moonrise": "2026-09-27T10:37Z",
+          "moonset": "2026-09-26T22:46Z",
+          "moonTransit": "2026-09-26T16:23Z",
+          "moonUnderfoot": "2026-09-27T04:23Z",
+          "moonPhase": "full-moon"
+        },
+        "temperatureMax": {
+          "value": 32.56,
+          "unit": "°C"
+        },
+        "temperatureMin": {
+          "value": 22.24,
+          "unit": "°C"
+        },
+        "temperatureAvg": {
+          "value": 27.3,
+          "unit": "°C"
+        },
+        "uvIndexMax": 6,
+        "daytime": {
+          "forecastStartTime": "2026-09-26T23:00Z",
+          "forecastEndTime": "2026-09-27T11:00Z",
+          "condition": {
+            "text": "小雨",
+            "code": "305"
+          },
+          "temperatureMax": {
+            "value": 32.56,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 22.31,
+            "unit": "°C"
+          },
+          "humidity": 0.62,
+          "wind": {
+            "direction": {
+              "degree": 200,
+              "compass": "ssw"
+            },
+            "speed": {
+              "value": 2.35,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 9.27,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0.31,
+              "unit": "mm"
+            },
+            "probability": 0,
+            "type": "rain"
+          },
+          "cloudCover": 0.44
+        },
+        "nighttime": {
+          "forecastStartTime": "2026-09-27T11:00Z",
+          "forecastEndTime": "2026-09-27T23:00Z",
+          "condition": {
+            "text": "少云",
+            "code": "102"
+          },
+          "temperatureMax": {
+            "value": 29.84,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 23.07,
+            "unit": "°C"
+          },
+          "humidity": 0.76,
+          "wind": {
+            "direction": {
+              "degree": 155,
+              "compass": "sse"
+            },
+            "speed": {
+              "value": 1.82,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 8.36,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0,
+            "type": "none"
+          },
+          "cloudCover": 0.17
+        }
+      },
+      {
+        "forecastStartTime": "2026-09-27T16:00Z",
+        "forecastEndTime": "2026-09-28T16:00Z",
+        "astro": {
+          "sunrise": "2026-09-27T22:31Z",
+          "sunset": "2026-09-28T10:31Z",
+          "astronomicalDawn": "2026-09-27T21:14Z",
+          "nauticalDawn": "2026-09-27T21:41Z",
+          "civilDawn": "2026-09-27T22:08Z",
+          "astronomicalDusk": "2026-09-28T11:49Z",
+          "nauticalDusk": "2026-09-28T11:21Z",
+          "civilDusk": "2026-09-28T10:54Z",
+          "solarNoon": "2026-09-28T04:31Z",
+          "solarMidnight": "2026-09-27T16:31Z",
+          "moonrise": "2026-09-28T11:11Z",
+          "moonset": "2026-09-27T23:46Z",
+          "moonTransit": "2026-09-27T17:09Z",
+          "moonUnderfoot": "2026-09-28T05:09Z",
+          "moonPhase": "waning-gibbous"
+        },
+        "temperatureMax": {
+          "value": 33.05,
+          "unit": "°C"
+        },
+        "temperatureMin": {
+          "value": 23.07,
+          "unit": "°C"
+        },
+        "temperatureAvg": {
+          "value": 27.45,
+          "unit": "°C"
+        },
+        "uvIndexMax": 6,
+        "daytime": {
+          "forecastStartTime": "2026-09-27T23:00Z",
+          "forecastEndTime": "2026-09-28T11:00Z",
+          "condition": {
+            "text": "少云",
+            "code": "102"
+          },
+          "temperatureMax": {
+            "value": 33.05,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 23.15,
+            "unit": "°C"
+          },
+          "humidity": 0.63,
+          "wind": {
+            "direction": {
+              "degree": 194,
+              "compass": "ssw"
+            },
+            "speed": {
+              "value": 2.4,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 10.07,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0.05,
+            "type": "none"
+          },
+          "cloudCover": 0.24
+        },
+        "nighttime": {
+          "forecastStartTime": "2026-09-28T11:00Z",
+          "forecastEndTime": "2026-09-28T23:00Z",
+          "condition": {
+            "text": "少云",
+            "code": "102"
+          },
+          "temperatureMax": {
+            "value": 28.63,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 24.32,
+            "unit": "°C"
+          },
+          "humidity": 0.75,
+          "wind": {
+            "direction": {
+              "degree": 197,
+              "compass": "ssw"
+            },
+            "speed": {
+              "value": 2.34,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 8.26,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0.47,
+            "type": "none"
+          },
+          "cloudCover": 0.1
+        }
+      },
+      {
+        "forecastStartTime": "2026-09-28T16:00Z",
+        "forecastEndTime": "2026-09-29T16:00Z",
+        "astro": {
+          "sunrise": "2026-09-28T22:32Z",
+          "sunset": "2026-09-29T10:30Z",
+          "astronomicalDawn": "2026-09-28T21:14Z",
+          "nauticalDawn": "2026-09-28T21:41Z",
+          "civilDawn": "2026-09-28T22:08Z",
+          "astronomicalDusk": "2026-09-29T11:47Z",
+          "nauticalDusk": "2026-09-29T11:20Z",
+          "civilDusk": "2026-09-29T10:53Z",
+          "solarNoon": "2026-09-29T04:31Z",
+          "solarMidnight": "2026-09-28T16:31Z",
+          "moonrise": "2026-09-29T11:51Z",
+          "moonset": "2026-09-29T00:50Z",
+          "moonTransit": "2026-09-28T17:58Z",
+          "moonUnderfoot": "2026-09-29T05:58Z",
+          "moonPhase": "waning-gibbous"
+        },
+        "temperatureMax": {
+          "value": 31.74,
+          "unit": "°C"
+        },
+        "temperatureMin": {
+          "value": 24.1,
+          "unit": "°C"
+        },
+        "temperatureAvg": {
+          "value": 27.3,
+          "unit": "°C"
+        },
+        "uvIndexMax": 9,
+        "daytime": {
+          "forecastStartTime": "2026-09-28T23:00Z",
+          "forecastEndTime": "2026-09-29T11:00Z",
+          "condition": {
+            "text": "小雨",
+            "code": "305"
+          },
+          "temperatureMax": {
+            "value": 31.74,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 24.3,
+            "unit": "°C"
+          },
+          "humidity": 0.7,
+          "wind": {
+            "direction": {
+              "degree": 204,
+              "compass": "ssw"
+            },
+            "speed": {
+              "value": 1.93,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 9.01,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0.43,
+              "unit": "mm"
+            },
+            "probability": 0.87,
+            "type": "rain"
+          },
+          "cloudCover": 0.21
+        },
+        "nighttime": {
+          "forecastStartTime": "2026-09-29T11:00Z",
+          "forecastEndTime": "2026-09-29T23:00Z",
+          "condition": {
+            "text": "小雨",
+            "code": "305"
+          },
+          "temperatureMax": {
+            "value": 27.06,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 21.85,
+            "unit": "°C"
+          },
+          "humidity": 0.96,
+          "wind": {
+            "direction": {
+              "degree": 359,
+              "compass": "n"
+            },
+            "speed": {
+              "value": 1.01,
+              "unit": "m/s"
+            },
+            "scale": 1
+          },
+          "windGustMax": {
+            "value": 3.35,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0.29,
+              "unit": "mm"
+            },
+            "probability": 0.77,
+            "type": "rain"
+          },
+          "cloudCover": 0.57
+        }
+      },
+      {
+        "forecastStartTime": "2026-09-29T16:00Z",
+        "forecastEndTime": "2026-09-30T16:00Z",
+        "astro": {
+          "sunrise": "2026-09-29T22:32Z",
+          "sunset": "2026-09-30T10:29Z",
+          "astronomicalDawn": "2026-09-29T21:15Z",
+          "nauticalDawn": "2026-09-29T21:42Z",
+          "civilDawn": "2026-09-29T22:09Z",
+          "astronomicalDusk": "2026-09-30T11:46Z",
+          "nauticalDusk": "2026-09-30T11:19Z",
+          "civilDusk": "2026-09-30T10:52Z",
+          "solarNoon": "2026-09-30T04:30Z",
+          "solarMidnight": "2026-09-29T16:30Z",
+          "moonrise": "2026-09-30T12:37Z",
+          "moonset": "2026-09-30T01:58Z",
+          "moonTransit": "2026-09-29T18:51Z",
+          "moonUnderfoot": "2026-09-30T06:51Z",
+          "moonPhase": "waning-gibbous"
+        },
+        "temperatureMax": {
+          "value": 30,
+          "unit": "°C"
+        },
+        "temperatureMin": {
+          "value": 21.19,
+          "unit": "°C"
+        },
+        "temperatureAvg": {
+          "value": 24.66,
+          "unit": "°C"
+        },
+        "uvIndexMax": 9,
+        "daytime": {
+          "forecastStartTime": "2026-09-29T23:00Z",
+          "forecastEndTime": "2026-09-30T11:00Z",
+          "condition": {
+            "text": "强雷阵雨",
+            "code": "303"
+          },
+          "temperatureMax": {
+            "value": 30,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 22.02,
+            "unit": "°C"
+          },
+          "humidity": 0.82,
+          "wind": {
+            "direction": {
+              "degree": 202,
+              "compass": "ssw"
+            },
+            "speed": {
+              "value": 0.2,
+              "unit": "m/s"
+            },
+            "scale": 0
+          },
+          "windGustMax": {
+            "value": 4.91,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 5.81,
+              "unit": "mm"
+            },
+            "probability": 0.93,
+            "type": "rain"
+          },
+          "cloudCover": 0.65
+        },
+        "nighttime": {
+          "forecastStartTime": "2026-09-30T11:00Z",
+          "forecastEndTime": "2026-09-30T23:00Z",
+          "condition": {
+            "text": "强雷阵雨",
+            "code": "303"
+          },
+          "temperatureMax": {
+            "value": 24.02,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 19.7,
+            "unit": "°C"
+          },
+          "humidity": 0.99,
+          "wind": {
+            "direction": {
+              "degree": 23,
+              "compass": "nne"
+            },
+            "speed": {
+              "value": 1.87,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 5.55,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 6.87,
+              "unit": "mm"
+            },
+            "probability": 0.87,
+            "type": "rain"
+          },
+          "cloudCover": 0.86
+        }
+      },
+      {
+        "forecastStartTime": "2026-09-30T16:00Z",
+        "forecastEndTime": "2026-10-01T16:00Z",
+        "astro": {
+          "sunrise": "2026-09-30T22:33Z",
+          "sunset": "2026-10-01T10:28Z",
+          "astronomicalDawn": "2026-09-30T21:15Z",
+          "nauticalDawn": "2026-09-30T21:42Z",
+          "civilDawn": "2026-09-30T22:09Z",
+          "astronomicalDusk": "2026-10-01T11:45Z",
+          "nauticalDusk": "2026-10-01T11:18Z",
+          "civilDusk": "2026-10-01T10:51Z",
+          "solarNoon": "2026-10-01T04:30Z",
+          "solarMidnight": "2026-09-30T16:30Z",
+          "moonrise": "2026-10-01T13:30Z",
+          "moonset": "2026-10-01T03:06Z",
+          "moonTransit": "2026-09-30T19:49Z",
+          "moonUnderfoot": "2026-10-01T07:49Z",
+          "moonPhase": "waning-gibbous"
+        },
+        "temperatureMax": {
+          "value": 20.79,
+          "unit": "°C"
+        },
+        "temperatureMin": {
+          "value": 17.88,
+          "unit": "°C"
+        },
+        "temperatureAvg": {
+          "value": 19.76,
+          "unit": "°C"
+        },
+        "uvIndexMax": 0,
+        "daytime": {
+          "forecastStartTime": "2026-09-30T23:00Z",
+          "forecastEndTime": "2026-10-01T11:00Z",
+          "condition": {
+            "text": "中雨",
+            "code": "306"
+          },
+          "temperatureMax": {
+            "value": 20.51,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 18.72,
+            "unit": "°C"
+          },
+          "humidity": 0.93,
+          "wind": {
+            "direction": {
+              "degree": 22,
+              "compass": "nne"
+            },
+            "speed": {
+              "value": 2.29,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 7.95,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 6.14,
+              "unit": "mm"
+            },
+            "probability": 0.6,
+            "type": "rain"
+          },
+          "cloudCover": 1
+        },
+        "nighttime": {
+          "forecastStartTime": "2026-10-01T11:00Z",
+          "forecastEndTime": "2026-10-01T23:00Z",
+          "condition": {
+            "text": "阴",
+            "code": "104"
+          },
+          "temperatureMax": {
+            "value": 19.29,
+            "unit": "°C"
+          },
+          "temperatureMin": {
+            "value": 17.51,
+            "unit": "°C"
+          },
+          "humidity": 0.88,
+          "wind": {
+            "direction": {
+              "degree": 9,
+              "compass": "n"
+            },
+            "speed": {
+              "value": 1.66,
+              "unit": "m/s"
+            },
+            "scale": 2
+          },
+          "windGustMax": {
+            "value": 4.88,
+            "unit": "m/s"
+          },
+          "precipitation": {
+            "amount": {
+              "value": 0,
+              "unit": "mm"
+            },
+            "probability": 0.67,
+            "type": "none"
+          },
+          "cloudCover": 1
+        }
+      }
+    ]
+  },
+  "minutely": {
+    "code": "200",
+    "updateTime": "2026-09-25T23:35+08:00",
+    "fxLink": "https://www.qweather.com",
+    "summary": "未来两小时无降水",
+    "minutely": [
+      {
+        "fxTime": "2026-09-25T23:35+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-25T23:40+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-25T23:45+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-25T23:50+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-25T23:55+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:00+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:05+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:10+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:15+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:20+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:25+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:30+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:35+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:40+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:45+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:50+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T00:55+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T01:00+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T01:05+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T01:10+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T01:15+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T01:20+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T01:25+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      },
+      {
+        "fxTime": "2026-09-26T01:30+08:00",
+        "precip": "0.00",
+        "type": "rain"
+      }
+    ],
+    "refer": {
+      "sources": [
+        "QWeather"
+      ],
+      "license": [
+        "QWeather Developers License"
+      ]
+    }
+  }
+}

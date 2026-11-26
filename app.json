@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/map",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/rainfall/rainfall"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f4f8fc",
+    "navigationBarTitleText": "中方县水利监测",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#8aa5b4",
+    "selectedColor": "#0e4d64",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图监测"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "站点列表"
+      },
+      {
+        "pagePath": "pages/rainfall/rainfall",
+        "text": "天气"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,120 @@
+<view class="page">
+  <view class="hero">
+    <view class="hero-surface"></view>
+    <view class="hero-aurora aurora-a"></view>
+    <view class="hero-aurora aurora-b"></view>
+    <view class="hero-ripple ripple-a"></view>
+    <view class="hero-ripple ripple-b"></view>
+
+    <view class="status-bar" style="height: {{statusBarHeight}}px"></view>
+
+    <view class="hero-content">
+      <picker class="location" mode="selector" range="{{townshipOptions}}" value="{{townshipIndex}}" bindchange="onTownshipChange">
+        <view class="location-picker">
+          <view class="location-mark ic ic-pin-w"></view>
+          <text class="location-text">{{location.city}}</text>
+          <text class="location-arrow">⌄</text>
+        </view>
+      </picker>
+
+      <view class="hero-headline">
+        <view class="hero-title anim-up d1">水利监测</view>
+        <view class="hero-subtitle anim-up d2">查看区域内站点更新情况</view>
+      </view>
+
+      <view class="weather-strip anim-up d3" wx:if="{{weatherStatus === 'success'}}" bindtap="goToRainfall">
+        <view class="weather-main">
+          <text class="weather-temp num">{{weather.current.temperature}}°</text>
+          <view class="weather-copy">
+            <view class="weather-text">{{weather.current.weather}}</view>
+            <view class="weather-meta">湿度 {{weather.current.humidity}}% · {{weather.current.windDirection}}</view>
+          </view>
+        </view>
+        <view class="weather-action">
+          <text class="weather-more">天气详情</text>
+          <text class="weather-chevron">›</text>
+        </view>
+      </view>
+
+      <view class="weather-strip weather-unavailable anim-up d3" wx:if="{{weatherStatus === 'error'}}" bindtap="onRefresh">
+        <view class="weather-copy">
+          <view class="weather-text">天气数据暂不可用</view>
+          <view class="weather-meta">{{weatherErrorMessage}}，点击重试</view>
+        </view>
+        <view class="weather-action">
+          <text class="weather-more">刷新</text>
+        </view>
+      </view>
+
+      <view class="weather-strip weather-loading anim-up d3" wx:if="{{weatherStatus === 'loading'}}">
+        <view class="sk weather-sk-temp"></view>
+        <view class="weather-copy">
+          <view class="sk weather-sk-line"></view>
+          <view class="sk weather-sk-line short"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="overview-card anim-up d2">
+      <view class="overview-top">
+        <view class="section-kicker">数据概览</view>
+      </view>
+      <view class="overview-metric">
+        <view class="overview-value-row">
+          <text class="overview-count num">{{zhongfangStationCount}}</text>
+          <text class="overview-unit">个</text>
+        </view>
+        <view class="overview-metric-label">中方县全域纳入监测站点</view>
+      </view>
+      <view class="overview-foot">
+        <text class="overview-foot-label">最近数据更新时间</text>
+        <text class="overview-foot-value num">{{latestUpdateTime}}</text>
+      </view>
+    </view>
+
+    <view class="map-portal anim-up d3" bindtap="goToMap">
+      <view class="map-portal-glow"></view>
+      <view class="map-portal-pattern"></view>
+      <view class="map-portal-copy">
+        <view class="map-portal-eyebrow">空间查看</view>
+        <view class="map-portal-title">查看地图</view>
+        <view class="map-portal-desc">站点分布 · 行政区边界 · 监测数据</view>
+      </view>
+      <view class="map-portal-arrow">→</view>
+    </view>
+
+    <view class="data-section anim-up d4">
+      <view class="section-header">
+        <view>
+          <view class="section-kicker">监测动态</view>
+          <view class="section-title">最新数据</view>
+        </view>
+        <text class="refresh-link" bindtap="onRefresh">刷新</text>
+      </view>
+
+      <view class="recent-card stagger" wx:if="{{recentList.length > 0}}">
+        <view class="recent-item" wx:for="{{recentList}}" wx:key="id" bindtap="goToDetail" data-id="{{item.id}}">
+          <view class="recent-icon {{item.type}}">
+            {{item.stationTypeLabel}}
+          </view>
+          <view class="recent-info">
+            <view class="recent-name">{{item.name}}</view>
+            <view class="recent-time num">{{item.updateTime}}</view>
+          </view>
+          <view class="recent-value">
+            <view class="value-text num">{{item.valueText}}</view>
+            <view class="value-label">{{item.valueLabel}}</view>
+          </view>
+          <text class="recent-arrow">›</text>
+        </view>
+      </view>
+      <view class="empty-card" wx:else bindtap="onRefresh">
+        <view class="empty-mark ic ic-inbox-g"></view>
+        <view class="empty-title">{{stationLoadFailed ? '站点数据获取失败' : '暂未获取到站点更新数据'}}</view>
+        <view class="empty-desc">{{stationLoadFailed ? '点击此处重试' : '可下拉刷新或稍后再试'}}</view>
+      </view>
+    </view>
+  </view>
+</view>
